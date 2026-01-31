@@ -27,7 +27,7 @@ export type ToolAuditEntry = {
   /** ISO timestamp */
   timestamp: string;
   /** Event type */
-  event: "tool_call" | "tool_result" | "tool_error";
+  event: "tool_call" | "tool_result" | "tool_error" | "destructive_blocked" | "tier_decision";
   /** Session identifier */
   sessionKey: string;
   /** Agent identifier if available */
@@ -48,6 +48,10 @@ export type ToolAuditEntry = {
   approvalRequired?: boolean;
   /** Whether approval was granted */
   approvalGranted?: boolean;
+  /** Action tier (read/write/destructive) */
+  actionTier?: string;
+  /** Destructive patterns matched */
+  destructivePatterns?: Array<{ pattern: string; description: string; severity: string }>;
 };
 
 let initialized = false;
@@ -185,6 +189,56 @@ export function logToolError(params: {
     toolCallId: params.toolCallId,
     status: "error",
     error: truncate(params.error, 500),
+  });
+}
+
+/**
+ * Logs a destructive command block event.
+ */
+export function logDestructiveBlocked(params: {
+  sessionKey: string;
+  agentId?: string;
+  tool: string;
+  toolCallId: string;
+  command: string;
+  patterns: Array<{ pattern: string; description: string; severity: string }>;
+}): void {
+  writeAuditEntry({
+    timestamp: new Date().toISOString(),
+    event: "destructive_blocked",
+    sessionKey: params.sessionKey,
+    agentId: params.agentId,
+    tool: params.tool,
+    toolCallId: params.toolCallId,
+    args: { command: truncate(params.command, 200) },
+    status: "error",
+    error: `Destructive command blocked: ${params.patterns.map((p) => p.description).join(", ")}`,
+    destructivePatterns: params.patterns,
+  });
+}
+
+/**
+ * Logs an action tier decision event.
+ */
+export function logTierDecision(params: {
+  sessionKey: string;
+  agentId?: string;
+  tool: string;
+  toolCallId: string;
+  tier: string;
+  decision: "allow" | "ask" | "deny";
+  reason?: string;
+}): void {
+  writeAuditEntry({
+    timestamp: new Date().toISOString(),
+    event: "tier_decision",
+    sessionKey: params.sessionKey,
+    agentId: params.agentId,
+    tool: params.tool,
+    toolCallId: params.toolCallId,
+    actionTier: params.tier,
+    status: params.decision === "deny" ? "error" : "success",
+    error: params.decision === "deny" ? params.reason : undefined,
   });
 }
 

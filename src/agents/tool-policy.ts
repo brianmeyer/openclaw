@@ -1,4 +1,4 @@
-export type ToolProfileId = "minimal" | "coding" | "messaging" | "full";
+export type ToolProfileId = "minimal" | "coding" | "messaging" | "full" | "safe" | "standard";
 
 type ToolProfilePolicy = {
   allow?: string[];
@@ -54,6 +54,50 @@ export const TOOL_GROUPS: Record<string, string[]> = {
     "web_fetch",
     "image",
   ],
+
+  // ==========================================================================
+  // Tiered permission groups (Composio-inspired action-level control)
+  // ==========================================================================
+
+  // Read tier: Safe observation tools (always allowed in safe/standard profiles)
+  "group:read": [
+    "read",
+    "web_search",
+    "web_fetch",
+    "memory_search",
+    "memory_get",
+    "sessions_list",
+    "sessions_history",
+    "session_status",
+    "agents_list",
+    "security_audit",
+    "security_monitor",
+    "security_scan_skills",
+    "image",
+  ],
+
+  // Write tier: State-modifying tools (requires approval in safe profile)
+  "group:write": [
+    "write",
+    "edit",
+    "apply_patch",
+    "message",
+    "sessions_send",
+    "sessions_spawn",
+    "cron",
+    "gateway",
+    "browser",
+    "canvas",
+    "nodes",
+    "tts",
+    "security_fix",
+  ],
+
+  // Destructive tier: High-risk tools (blocked in safe profile, requires approval in standard)
+  "group:destructive": ["exec", "process", "elevated_exec"],
+
+  // Security tools group
+  "group:security": ["security_audit", "security_fix", "security_monitor", "security_scan_skills"],
 };
 
 const TOOL_PROFILES: Record<ToolProfileId, ToolProfilePolicy> = {
@@ -73,6 +117,30 @@ const TOOL_PROFILES: Record<ToolProfileId, ToolProfilePolicy> = {
     ],
   },
   full: {},
+
+  // ==========================================================================
+  // Tiered permission profiles (Composio-inspired)
+  // ==========================================================================
+
+  /**
+   * Safe profile: Read-only access + limited write tools.
+   * Blocks all destructive tools (exec, process).
+   * Use for untrusted contexts or when maximum safety is required.
+   */
+  safe: {
+    allow: ["group:read", "group:security"],
+    deny: ["group:destructive"],
+  },
+
+  /**
+   * Standard profile: Read + write access, explicit deny of destructive tools.
+   * Destructive tools require explicit allowlist or elevated permissions.
+   * Recommended default for most use cases.
+   */
+  standard: {
+    allow: ["group:read", "group:write", "group:security"],
+    deny: ["group:destructive"],
+  },
 };
 
 export function normalizeToolName(name: string) {
