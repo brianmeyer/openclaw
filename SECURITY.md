@@ -59,6 +59,18 @@ docker run --read-only --cap-drop=ALL \
   openclaw/openclaw:latest
 ```
 
+## MCP Server Security
+
+If you use MCP (Model Context Protocol) servers with OpenClaw:
+
+1. **Only connect to trusted MCP servers** - Malicious servers can exploit vulnerabilities in MCP clients
+2. **Use HTTPS connections** - Always prefer secure connections when connecting to remote MCP servers
+3. **Update your MCP tooling** - CVE-2025-6514 is a critical command injection vulnerability in `mcp-remote` versions < 0.1.16. Update immediately if affected.
+
+For more information:
+- [CVE-2025-6514 Advisory](https://github.com/advisories/GHSA-6xpm-ggf7-wc3p)
+- [MCP Security Best Practices](https://modelcontextprotocol.io/docs/security)
+
 ## Security Scanning
 
 This project uses `detect-secrets` for automated secret detection in CI/CD.

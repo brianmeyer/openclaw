@@ -33,7 +33,15 @@ const DEFAULT_REDACT_PATTERNS: string[] = [
   String.raw`\b(AIza[0-9A-Za-z\-_]{20,})\b`,
   String.raw`\b(pplx-[A-Za-z0-9_-]{10,})\b`,
   String.raw`\b(npm_[A-Za-z0-9]{10,})\b`,
+  // Telegram bot tokens (format: bot_id:token).
   String.raw`\b(\d{6,}:[A-Za-z0-9_-]{20,})\b`,
+  // Discord bot tokens (format: base64.base64.base64, ~59+ chars total).
+  String.raw`\b([A-Za-z0-9_-]{18,}\.[A-Za-z0-9_-]{6}\.[A-Za-z0-9_-]{24,})\b`,
+  // AWS Access Key IDs (AKIA for regular, ASIA for STS temporary).
+  String.raw`\b(A[KS]IA[0-9A-Z]{16})\b`,
+  // AWS Secret Access Keys (40 chars, usually follows aws_secret_access_key).
+  // Note: uses /i flag via parsePattern for case-insensitive matching.
+  String.raw`/aws_secret_access_key["'\s:=]+([A-Za-z0-9\/+=]{40})\b/i`,
 ];
 
 type RedactOptions = {

@@ -16,12 +16,22 @@ services:
       - "${OPENCLAW_BRIDGE_PORT:-18790}:18790"
     init: true
     restart: unless-stopped
+    # Security hardening (per RAK framework)
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:noexec,nosuid,size=256M
     command:
       [
         "node",
         "dist/index.js",
         "gateway",
         "--bind",
+        # Note: "lan" is intentional for containers - the container network namespace
+        # provides isolation; Docker port mapping handles external access.
+        # Gateway token authentication is still required.
         "${OPENCLAW_GATEWAY_BIND:-lan}",
         "--port",
         "${OPENCLAW_GATEWAY_PORT:-18789}",
@@ -42,4 +52,11 @@ services:
     stdin_open: true
     tty: true
     init: true
+    # Security hardening (per RAK framework)
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:noexec,nosuid,size=256M
     entrypoint: ["node", "dist/index.js"]

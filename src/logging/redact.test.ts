@@ -92,4 +92,42 @@ describe("redactSensitiveText", () => {
     });
     expect(output).toBe(input);
   });
+
+  it("masks Discord bot tokens", () => {
+    // Discord tokens have format: user_id_base64.timestamp_base64.hmac_base64
+    const input = "MjM4NDk5MzIwNzM4MDQ4OTky.Ypnc6i._joetl0nTHusu9WlSUtOH9kY8";
+    const output = redactSensitiveText(input, {
+      mode: "tools",
+      patterns: defaults,
+    });
+    // Keeps 6 chars at start, 4 chars at end
+    expect(output).toBe("MjM4ND…9kY8");
+  });
+
+  it("masks AWS access key IDs", () => {
+    const input = "AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE";
+    const output = redactSensitiveText(input, {
+      mode: "tools",
+      patterns: defaults,
+    });
+    expect(output).toContain("AKIAIO…MPLE");
+  });
+
+  it("masks AWS STS temporary access keys", () => {
+    const input = "ASIAJEXAMPLE1234ABCD";
+    const output = redactSensitiveText(input, {
+      mode: "tools",
+      patterns: defaults,
+    });
+    expect(output).toBe("ASIAJE…ABCD");
+  });
+
+  it("masks AWS secret access keys", () => {
+    const input = 'aws_secret_access_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"';
+    const output = redactSensitiveText(input, {
+      mode: "tools",
+      patterns: defaults,
+    });
+    expect(output).toContain("wJalrX…EKEY");
+  });
 });
