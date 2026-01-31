@@ -10,9 +10,11 @@ import { buildGatewayConnectionDetails } from "../gateway/call.js";
 import { probeGateway } from "../gateway/probe.js";
 import {
   collectAttackSurfaceSummaryFindings,
+  collectElevatedSandboxFindings,
   collectExposureMatrixFindings,
   collectHooksHardeningFindings,
   collectIncludeFilePermFindings,
+  collectMdnsFindings,
   collectModelHygieneFindings,
   collectSmallModelRiskFindings,
   collectPluginsTrustFindings,
@@ -929,6 +931,8 @@ export async function runSecurityAudit(opts: SecurityAuditOptions): Promise<Secu
   findings.push(...collectModelHygieneFindings(cfg));
   findings.push(...collectSmallModelRiskFindings({ cfg, env }));
   findings.push(...collectExposureMatrixFindings(cfg));
+  findings.push(...collectMdnsFindings(cfg));
+  findings.push(...collectElevatedSandboxFindings(cfg));
 
   const configSnapshot =
     opts.includeFilesystem !== false

@@ -1055,6 +1055,66 @@ export function collectExposureMatrixFindings(cfg: OpenClawConfig): SecurityAudi
   return findings;
 }
 
+/**
+ * Checks for mDNS service discovery configuration risks.
+ * Based on ClawdGuard's detection of mDNS information leakage.
+ */
+export function collectMdnsFindings(cfg: OpenClawConfig): SecurityAuditFinding[] {
+  const findings: SecurityAuditFinding[] = [];
+  const mdnsMode = cfg.discovery?.mdns?.mode;
+
+  if (mdnsMode === "full") {
+    findings.push({
+      checkId: "discovery.mdns_full",
+      severity: "warn",
+      title: "mDNS discovery mode is 'full'",
+      detail:
+        "discovery.mdns.mode='full' broadcasts gateway information on the local network. " +
+        "This can leak information about your OpenClaw installation to other devices on the network.",
+      remediation: `Set discovery.mdns.mode='minimal' or 'off': ${formatCliCommand("openclaw config set discovery.mdns.mode minimal")}`,
+    });
+  }
+
+  return findings;
+}
+
+/**
+ * Checks for elevated execution without sandboxing.
+ * Based on RAK framework Root Risk mitigation.
+ */
+export function collectElevatedSandboxFindings(cfg: OpenClawConfig): SecurityAuditFinding[] {
+  const findings: SecurityAuditFinding[] = [];
+  const elevatedEnabled = cfg.tools?.elevated?.enabled !== false;
+
+  if (!elevatedEnabled) {
+    return findings;
+  }
+
+  // Check if sandbox is enabled for the default agent
+  const defaultAgentId = resolveDefaultAgentId(cfg);
+  const sandboxConfig = resolveSandboxConfigForAgent(cfg, defaultAgentId);
+
+  // Sandbox is "enabled" when mode is not "off"
+  const sandboxEnabled = sandboxConfig.mode !== "off";
+
+  if (!sandboxEnabled) {
+    findings.push({
+      checkId: "tools.elevated.no_sandbox",
+      severity: "critical",
+      title: "Elevated execution enabled without sandboxing",
+      detail:
+        "tools.elevated is enabled but Docker sandboxing is not configured. " +
+        "This allows agents to execute commands directly on the host system, " +
+        "increasing the risk of host compromise from prompt injection attacks.",
+      remediation:
+        "Enable Docker sandboxing (agents.defaults.sandbox.mode='all') or disable elevated execution " +
+        "(tools.elevated.enabled=false) for safer operation.",
+    });
+  }
+
+  return findings;
+}
+
 export async function readConfigSnapshotForAudit(params: {
   env: NodeJS.ProcessEnv;
   configPath: string;
