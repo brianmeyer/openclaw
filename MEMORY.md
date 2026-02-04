@@ -32,17 +32,22 @@
 ### 2026-02-03
 **Daily Reflection** (Cost: $0.0012, 945 episodes)
 
-Today's conversations focused on system health checks, nightly job reports, and exploring skills on ClawHub for setting up Twilio to make phone calls. Systems healthy, nightly jobs running successfully. Installed "phone-calls-bland" and "phone-agent" skills.
+Productive day focused on routing model development and system optimization. Trained and benchmarked multiple query routing models (TinyBERT, DistilBERT, ModernBERT) achieving 91.97% accuracy with ModernBERT. Fixed embeddingGemma consistency across 9 files. Reviewed and improved router code architecture.
 
 **Key Topics:**
-- System health checks (MollyGraph, Autosave, Nightly jobs)
-- Cron job scheduling for daily/weekly reflections
-- ClawHub skill exploration
+- Router model training and evaluation (TinyBERT vs DistilBERT vs ModernBERT)
+- Extended test set benchmarking (822 examples, 91.97% accuracy)
+- Embedding model standardization (embeddingGemma)
+- System health checks and cron job scheduling
+- Phone skills installation (phone-calls-bland, phone-agent)
 
 **Decisions Made:**
-- Installed phone-calls-bland and phone-agent skills
+- DistilBERT selected as production router (91.36% accuracy, 2.31ms latency)
+- embeddingGemma standardized across all components
+- Daily/weekly reflection cron jobs scheduled
 
 **Action Items:**
+- Deploy DistilBERT router to production
 - Test phone skills
 - Investigate latency optimization
 
