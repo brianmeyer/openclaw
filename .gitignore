@@ -1,0 +1,32 @@
+# Large model files
+routing_model_design/*/model.safetensors
+routing_model_design/*/*.bin
+routing_model_design/*/*.pth
+*.safetensors
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs that are too large
+*.log
+!training.log
+!comparison_run.log
