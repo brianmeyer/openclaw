@@ -58,31 +58,34 @@ Establish the core infrastructure, security posture, and development environment
 ```
 □ Fork OpenClaw repository
 □ Rebrand: package names, CLI commands, documentation
-□ Set up AWS GovCloud or Azure Government account
-□ Configure VPC with private subnets
-□ Deploy initial gateway infrastructure
-□ Set up secrets management (Vault or Secrets Manager)
-□ Configure MFA for all admin access
-□ Establish backup and DR procedures
+□ Set up Google Cloud Platform project
+  - Enable Assured Workloads for FedRAMP compliance (if needed)
+  - Configure organization policies
+□ Configure Google Cloud VPC with private subnets
+□ Deploy initial gateway infrastructure (Cloud Run or GKE)
+□ Set up Google Cloud Secret Manager
+□ Configure Google Cloud Identity with MFA enforcement
+□ Establish backup and DR procedures (Cloud Storage, cross-region)
+□ Enable Cloud Audit Logs for all services
 ```
 
 #### 0.2 Security Implementation (Weeks 2-4)
 
 ```
-□ Implement RBAC system
-  - Define roles: admin, capture_manager, proposal_manager,
+□ Implement RBAC system via Google Cloud IAM
+  - Define custom roles: admin, capture_manager, proposal_manager,
     contracts, pricing, executive, readonly
   - Role-to-permission mapping
-  - Session token management
-□ Enable encryption at rest (AES-256)
-□ Configure TLS 1.3 for all communications
+  - Google Workspace group-based access
+□ Enable encryption at rest (Google Cloud default encryption)
+□ Configure TLS 1.3 for all communications (automatic with Cloud Run/GKE)
 □ Implement audit logging
-  - Every agent action logged
-  - Every tool invocation logged
-  - Every human approval logged
-  - Immutable log storage (S3 with object lock)
-□ Security scanning pipeline (SAST/DAST)
-□ Dependency vulnerability scanning
+  - Cloud Audit Logs for all API calls
+  - Custom application logs to Cloud Logging
+  - Every agent action, tool invocation, approval logged
+  - Immutable log storage (Cloud Storage with retention lock)
+□ Enable Security Command Center for vulnerability scanning
+□ Configure Artifact Registry vulnerability scanning
 □ Initial penetration test engagement
 ```
 
@@ -92,22 +95,24 @@ Establish the core infrastructure, security posture, and development environment
 □ Remove consumer channels (WhatsApp, Telegram personal)
   - Keep architecturally but disable
   - May re-enable for specific use cases later
-□ Enhance Slack integration
+□ Build Google Chat integration (primary)
+  - Chat API for messaging
+  - Spaces for team collaboration
+  - Interactive cards for approvals/actions
+  - Threaded conversations
+  - File sharing via Drive links
+□ Build Gmail integration (primary)
+  - Gmail API for inbox monitoring
+  - Automated responses and notifications
+  - Threading by conversation ID
+  - Attachment handling (upload to Drive)
+  - Label-based routing
+□ Keep Slack as secondary option
   - Threaded conversations
   - File sharing
-  - Interactive components (buttons, modals)
-  - Workflow triggers
-□ Enhance Microsoft Teams integration
-  - Graph API integration
-  - Adaptive cards
-  - Meeting integration (future)
-□ Build Email channel
-  - IMAP/SMTP support
-  - Mailbox monitoring
-  - Threading by subject/reference
-  - Attachment handling
+  - Interactive components
 □ Build Web dashboard shell
-  - Authentication (SSO ready)
+  - Google Cloud Identity SSO
   - Navigation structure
   - Agent interaction panel
 ```
@@ -180,11 +185,11 @@ Establish the core infrastructure, security posture, and development environment
 
 | Criterion | Measurement |
 |-----------|-------------|
-| Infrastructure deployed | All services running in GovCloud/Gov Azure |
-| Security controls active | Audit logs capturing all actions |
-| Channels functional | Slack + Teams + Email sending/receiving |
+| Infrastructure deployed | All services running in Google Cloud Platform |
+| Security controls active | Cloud Audit Logs capturing all actions |
+| Channels functional | Google Chat + Gmail + Slack sending/receiving |
 | Data models defined | Schema documented and implemented |
-| CI/CD operational | Automated deployments to staging |
+| CI/CD operational | Cloud Build deployments to staging |
 
 ---
 
@@ -513,33 +518,44 @@ Add remaining core subagents and enhance capabilities based on Phase 1 learnings
 ### 2.4 Enhanced Integrations (Weeks 27-30)
 
 ```
-□ ERP integrations:
+□ Google Workspace deep integration:
+  - Google Drive (primary document management)
+    · Proposal document storage with folder structure
+    · Version control and revision history
+    · Real-time collaboration
+    · Shared drives for team access
+  - Google Sheets
+    · Pricing models and cost tracking
+    · Pipeline tracking spreadsheets
+    · Automated data sync
+  - Google Calendar
+    · Proposal deadlines
+    · Gate review meetings
+    · Customer engagement tracking
+  - Google Docs
+    · Proposal section drafting
+    · Collaborative editing
+    · Comment/suggestion workflows
+
+□ Vertex AI integration:
+  - Gemini models as primary LLM
+  - Document AI for RFP/contract parsing
+  - Custom model fine-tuning (future)
+
+□ ERP integrations (optional):
   - Deltek Costpoint
     · Project data sync
     · Labor category rates
     · Indirect rate tables
-    · Timesheet data (read-only)
   - Unanet (alternative)
-    · Similar capabilities
 
-□ Document management:
-  - SharePoint/OneDrive
-    · Proposal document storage
-    · Version control
-    · Collaboration
-  - Google Drive (alternative)
-
-□ CRM integration:
-  - Salesforce
-    · Opportunity sync
-    · Contact management
-    · Activity logging
+□ CRM integration (optional):
+  - Salesforce or Google Sheets-based pipeline
 
 □ Third-party data:
   - GovWin IQ
     · Forecast data
     · Agency intelligence
-  - Bloomberg Government (optional)
 ```
 
 ### 2.5 Advanced Dashboard Features (Weeks 29-32)
@@ -575,8 +591,9 @@ Add remaining core subagents and enhance capabilities based on Phase 1 learnings
 | Criterion | Measurement |
 |-----------|-------------|
 | All 5 subagents operational | Pricing, Contract, Compliance agents deployed |
-| ERP integration live | Costpoint or Unanet connected |
-| Document management connected | SharePoint or Google Drive integrated |
+| Vertex AI integration live | Gemini models serving all agent requests |
+| Google Workspace fully connected | Drive, Gmail, Calendar, Sheets integrated |
+| ERP integration live | Costpoint or Unanet connected (if applicable) |
 | Full dashboard features | Pipeline, workspace, reporting complete |
 | Compliance verification | NIST 800-171 self-assessment passed |
 
@@ -767,25 +784,30 @@ Add capabilities for larger organizations and potential multi-tenant deployment.
 | Federal Contracting SME | 0.5 | 0.5 | 0.5 |
 | **Total FTEs** | **9** | **12.5** | **14.5** |
 
-### Infrastructure Costs (Monthly Estimates)
+### Infrastructure Costs (Monthly Estimates - Google Cloud)
 
 | Category | Phase 0-1 | Phase 2-3 | Phase 4 |
 |----------|-----------|-----------|---------|
-| Cloud Infrastructure | $2,000 | $5,000 | $10,000+ |
-| LLM API Costs | $3,000 | $8,000 | $15,000+ |
-| Third-party APIs | $500 | $1,500 | $3,000 |
-| Security Tools | $500 | $1,000 | $2,000 |
-| Monitoring/Observability | $300 | $600 | $1,000 |
-| **Total Monthly** | **$6,300** | **$16,100** | **$31,000+** |
+| Google Cloud (compute, storage, networking) | $1,500 | $4,000 | $8,000+ |
+| Vertex AI (Gemini API costs) | $3,000 | $8,000 | $15,000+ |
+| Google Workspace (Business Plus) | $500 | $800 | $1,500 |
+| Third-party APIs (SAM.gov, GovWin) | $500 | $1,500 | $3,000 |
+| Security (Security Command Center) | $300 | $800 | $1,500 |
+| BigQuery (analytics) | $200 | $500 | $1,000 |
+| **Total Monthly** | **$6,000** | **$15,600** | **$30,000+** |
+
+*Note: Google Cloud offers committed use discounts (up to 57% off) and Vertex AI pricing is competitive with other providers.*
 
 ### Key Dependencies
 
 | Dependency | Risk Level | Mitigation |
 |------------|------------|-----------|
-| LLM Provider APIs | Medium | Multi-provider support |
+| Vertex AI / Gemini availability | Low | Google enterprise SLA, fallback to Anthropic/OpenAI |
+| Google Workspace API stability | Low | Mature APIs, Google enterprise support |
 | Government API stability | Low | Caching, fallbacks |
 | Domain expertise | High | Hire or contract federal SME |
 | Security certifications | Medium | Early engagement with assessors |
+| Google Cloud region availability | Low | Multi-region deployment option |
 
 ---
 
@@ -793,11 +815,11 @@ Add capabilities for larger organizations and potential multi-tenant deployment.
 
 ### Phase 0 Checklist
 - [ ] Repository forked and rebranded
-- [ ] Cloud infrastructure deployed (GovCloud/Gov Azure)
-- [ ] Security baseline implemented (encryption, RBAC, audit logs)
-- [ ] Enterprise channels configured (Slack, Teams, Email)
+- [ ] Google Cloud Platform project configured
+- [ ] Security baseline implemented (Cloud IAM, Cloud Audit Logs, encryption)
+- [ ] Enterprise channels configured (Google Chat, Gmail, Slack)
 - [ ] Knowledge base schema implemented
-- [ ] CI/CD pipeline operational
+- [ ] Cloud Build CI/CD pipeline operational
 - [ ] Documentation site launched
 
 ### Phase 1 Checklist
@@ -814,8 +836,9 @@ Add capabilities for larger organizations and potential multi-tenant deployment.
 - [ ] Pricing agent deployed
 - [ ] Contract agent deployed
 - [ ] Compliance agent deployed
-- [ ] ERP integration complete
-- [ ] Document management integration complete
+- [ ] Vertex AI (Gemini) fully integrated
+- [ ] Google Workspace integration complete (Drive, Gmail, Calendar, Sheets)
+- [ ] ERP integration complete (if applicable)
 - [ ] Advanced dashboard features deployed
 - [ ] NIST 800-171 self-assessment complete
 

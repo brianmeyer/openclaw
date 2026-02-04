@@ -152,7 +152,7 @@ FedAgent is an **AI employee platform** consisting of:
 │                              │                                      │
 │  ┌───────────────────────────▼─────────────────────────────┐       │
 │  │                   INTEGRATIONS                           │       │
-│  │  SAM.gov │ FPDS │ GovWin │ Deltek │ SharePoint │ Email  │       │
+│  │  SAM.gov │ FPDS │ GovWin │ Google Drive │ Gmail │ Vertex│       │
 │  └─────────────────────────────────────────────────────────┘       │
 ├─────────────────────────────────────────────────────────────────────┤
 │  ┌─────────────────────────────────────────────────────────┐       │
@@ -170,9 +170,10 @@ FedAgent is an **AI employee platform** consisting of:
 | Domain Subagents | Agent config `subagents` | Domain-specific system prompts, tools |
 | Skills | `skills/` directory | New federal contracting skills |
 | Knowledge Base | `src/memory/` vector search | Schema for contracts, past performance |
-| Integrations | `extensions/` plugin system | New plugins for gov systems |
-| Communication | Channels (Slack, Teams, Email) | Enterprise channel focus |
-| Audit | Plugin hooks | New compliance audit plugin |
+| Integrations | `extensions/` plugin system | Google Workspace + gov API plugins |
+| Communication | Channels (Google Chat, Gmail, Slack) | Google-first channel focus |
+| LLM Provider | Vertex AI (Gemini) | Primary model provider |
+| Audit | Plugin hooks | Cloud Audit Logs integration |
 
 ### Data Flow
 
@@ -192,12 +193,13 @@ User Request → Orchestrator → Subagent Selection → Skill Execution
 
 ### 5.1 Communication Layer
 
-Leverage OpenClaw's channel system for enterprise communication:
+Leverage OpenClaw's channel system for enterprise communication (Google-first):
 
 | Channel | Primary Use Case |
 |---------|-----------------|
-| **Slack/Teams** | Real-time collaboration, status updates, approvals |
-| **Email** | External communication, formal correspondence |
+| **Google Chat/Spaces** | Real-time collaboration, status updates, approvals |
+| **Gmail** | External communication, formal correspondence |
+| **Slack** | Alternative team communication (if needed) |
 | **Web UI** | Dashboard, document review, configuration |
 | **API** | Integration with existing tools |
 
@@ -469,16 +471,23 @@ Key behaviors:
 | beta.SAM.gov | API | Exclusions, wage determinations |
 | eCFR | Web scrape/API | Regulation text (FAR/DFARS) |
 
-### 7.2 Enterprise Systems
+### 7.2 Enterprise Systems (Google-First Stack)
 
 | System | Integration Type | Purpose |
 |--------|-----------------|---------|
-| Deltek Costpoint | API | Financials, timekeeping, project data |
+| **Google Workspace** | API | Core productivity suite |
+| Google Drive | Drive API | Document storage, collaboration, version control |
+| Gmail | Gmail API | Email communication, inbox monitoring |
+| Google Calendar | Calendar API | Scheduling, deadlines, reminders |
+| Google Chat/Spaces | Chat API | Team messaging, approvals, notifications |
+| Google Sheets | Sheets API | Pricing models, tracking, reporting |
+| **Vertex AI** | API | LLM inference (Gemini models) |
+| **Google Cloud Platform** | Native | Infrastructure, storage, compute |
+| BigQuery | API | Analytics, win/loss analysis |
+| Cloud Storage | API | Large file storage, backups |
+| Deltek Costpoint | API | Financials, timekeeping (optional ERP) |
 | Unanet | API | Alternative ERP integration |
-| SharePoint/OneDrive | API | Document management |
-| Microsoft 365 | API | Email, calendar, Teams |
-| Google Workspace | API | Alternative suite integration |
-| Salesforce | API | CRM/pipeline management |
+| Salesforce | API | CRM/pipeline management (optional) |
 
 ### 7.3 Third-Party Data
 
@@ -497,12 +506,13 @@ Key behaviors:
 
 | Requirement | Implementation |
 |-------------|---------------|
-| **Data Encryption** | AES-256 at rest, TLS 1.3 in transit |
-| **Access Control** | RBAC with MFA enforcement |
-| **Audit Logging** | Immutable logs, 7-year retention |
-| **Network Isolation** | VPC with private subnets |
-| **Secret Management** | HashiCorp Vault or AWS Secrets Manager |
-| **Vulnerability Scanning** | Continuous SAST/DAST |
+| **Data Encryption** | AES-256 at rest (Google Cloud default), TLS 1.3 in transit |
+| **Access Control** | Google Cloud IAM + Workspace RBAC with MFA enforcement |
+| **Audit Logging** | Cloud Audit Logs + immutable Cloud Storage, 7-year retention |
+| **Network Isolation** | Google Cloud VPC with private subnets |
+| **Secret Management** | Google Cloud Secret Manager |
+| **Identity Provider** | Google Cloud Identity / Workspace SSO |
+| **Vulnerability Scanning** | Security Command Center, continuous SAST/DAST |
 
 ### 8.2 Compliance Framework Alignment
 
@@ -699,20 +709,23 @@ Key behaviors:
 
 | Component | Current Purpose | New Purpose |
 |-----------|----------------|-------------|
-| Channels | Consumer messaging (WhatsApp, Telegram) | Enterprise messaging (Slack, Teams, Email) |
+| Channels | Consumer messaging (WhatsApp, Telegram) | Google Workspace (Chat, Gmail) + Slack |
 | Skills | General AI tasks | Federal contracting specializations |
 | System prompts | General assistant | Domain-specific agents |
 | Memory schema | General knowledge | Contracts, past performance, personnel |
+| Model provider | Multi-provider | Vertex AI (Gemini) as primary |
 
 ### Components to Add
 
 | New Component | Purpose |
 |---------------|---------|
+| Google Workspace plugin | Drive, Gmail, Calendar, Chat integration |
+| Vertex AI integration | Gemini model access via Google Cloud |
 | Approval workflow engine | Human-in-the-loop controls |
-| Compliance audit plugin | Regulatory logging and reporting |
+| Compliance audit plugin | Cloud Audit Logs + regulatory reporting |
 | Government API integrations | SAM.gov, FPDS, USASpending |
-| Document processing pipeline | RFP/contract parsing |
-| Reporting dashboard | Executive visibility |
+| Document processing pipeline | RFP/contract parsing (via Document AI) |
+| BigQuery analytics | Win/loss analysis, reporting dashboard |
 
 ---
 
