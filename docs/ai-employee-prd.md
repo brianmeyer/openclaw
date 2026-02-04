@@ -1,446 +1,761 @@
-# AI Employee for Solo Federal Contractor
-## Product Requirements Document (PRD)
+# FedAI: AI Employee Platform
+## Technical PRD - Ground-Up Build
 
-**Version:** 2.0
-**Date:** February 2026
-**Status:** Bootstrap Edition
-**Target:** Solo founder starting a federal contracting company
-
----
-
-## Executive Summary
-
-A lightweight AI assistant built on OpenClaw to help a solo federal contractor find opportunities, write proposals, and manage their business. The goal is to give one person the capabilities that would normally require a small team — without the overhead.
-
-### Vision
-
-> One founder + AI employees = competitive federal contractor
+**Version:** 3.0
+**Status:** Architecture & Design
+**Approach:** Clean implementation inspired by OpenClaw patterns, built cloud-native on Google Cloud
 
 ---
 
-## 1. The Reality of Solo Federal Contracting
+## 1. Why Build From Scratch
 
-### What You Actually Need Day-to-Day
+### Problems with Forking OpenClaw
 
-| Task | Time Sink | AI Can Help |
-|------|-----------|-------------|
-| Finding opportunities on SAM.gov | Hours of searching | Auto-monitor and filter |
-| Reading 100-page RFPs | Half a day per RFP | Extract key requirements fast |
-| Writing proposal sections | Days per proposal | Draft and iterate quickly |
-| Tracking deadlines | Mental overhead | Automated reminders |
-| Past performance write-ups | Repetitive writing | Template and customize |
-| Compliance questions | Research rabbit holes | Quick FAR/DFARS lookups |
-| Pricing/estimating | Spreadsheet hell | Structured calculations |
+| Issue | Impact |
+|-------|--------|
+| **Complexity** | 50K+ lines of code for features you don't need |
+| **Consumer-focused** | Built for WhatsApp/Telegram/Discord, not enterprise |
+| **Security debt** | Multiple auth flows, credential storage patterns |
+| **Dependencies** | Heavy dependency tree with patch requirements |
+| **Local-first** | Designed to run on laptops, not cloud-native |
 
-### What You DON'T Need Yet
+### Benefits of Clean Build
 
-- Multi-tenant architecture
-- Enterprise security frameworks
-- Complex subagent orchestration
-- $30K/month infrastructure
-- Team collaboration features
-- Fancy dashboards
-
----
-
-## 2. Simplified Architecture
-
-```
-┌─────────────────────────────────────────────────────┐
-│                   Your AI Employee                   │
-│                                                      │
-│  ┌─────────────────────────────────────────────┐    │
-│  │            Single Smart Agent                │    │
-│  │                                              │    │
-│  │  Skills:                                     │    │
-│  │  • Opportunity hunting (SAM.gov)            │    │
-│  │  • RFP analysis                             │    │
-│  │  • Proposal writing                         │    │
-│  │  • Compliance lookup                        │    │
-│  │  • Pricing help                             │    │
-│  │  • Calendar/deadline tracking               │    │
-│  └─────────────────────────────────────────────┘    │
-│                        │                             │
-│  ┌─────────────────────▼───────────────────────┐    │
-│  │              Your Google Drive               │    │
-│  │  Proposals/ │ Contracts/ │ Templates/       │    │
-│  └─────────────────────────────────────────────┘    │
-│                        │                             │
-│  ┌─────────────────────▼───────────────────────┐    │
-│  │              Free Gov APIs                   │    │
-│  │         SAM.gov │ FPDS │ USASpending        │    │
-│  └─────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────┘
-
-Talk to it via: Gmail │ Google Chat │ Terminal │ Web
-```
-
-### Why This Works
-
-OpenClaw already has:
-- **Skills system** — Add federal contracting skills
-- **Memory** — Remember your past performance, pricing, preferences
-- **Google integration** — Gmail monitoring, Drive access
-- **Multiple LLM support** — Use Gemini, Claude, or GPT based on cost/quality
+| Benefit | Result |
+|---------|--------|
+| **Minimal surface area** | Less code = fewer bugs = easier to audit |
+| **Cloud-native** | Serverless, scales to zero, no infra management |
+| **Your architecture** | Designed for your exact use case |
+| **No legacy** | Modern patterns, no backward compatibility |
+| **Auditable** | You wrote it, you understand it |
 
 ---
 
-## 3. Core Capabilities (MVP)
+## 2. Core Concepts (Borrowed from OpenClaw)
 
-### 3.1 Opportunity Scout
+What to take from OpenClaw's design:
 
-**What it does:**
-- Monitor SAM.gov for opportunities matching your NAICS codes
-- Daily digest of new opportunities via email/chat
-- Quick qualification: "Is this worth pursuing?"
-
-**Example interactions:**
+### 2.1 Agent Loop Pattern
 ```
-You: "Find IT services opportunities under $500K for small business set-asides"
-
-AI: Found 12 opportunities this week matching your criteria:
-
-    1. VA SSVF IT Support Services - $350K - Due Mar 15
-       Set-aside: SDVOSB ✓  NAICS: 541512 ✓
-       Quick take: Good fit. VA has funded this annually for 3 years.
-
-    2. DOL Website Maintenance - $200K - Due Mar 22
-       Set-aside: 8(a) ✗ (you're not 8(a))
-       Quick take: Skip unless you can team.
-    ...
+User Message → System Prompt + Tools → LLM → Tool Calls → Results → Response
+                     ↑                              │
+                     └──────── Memory ◄─────────────┘
 ```
 
-### 3.2 RFP Analyzer
+### 2.2 Skills as Markdown
+Skills are just markdown files with instructions. The agent reads them and follows them. Simple, editable, version-controlled.
 
-**What it does:**
-- Parse uploaded RFP PDFs
-- Extract: requirements, evaluation criteria, deadlines, page limits
-- Generate compliance checklist
-- Flag potential issues or showstoppers
+### 2.3 Memory as Files
+Store knowledge in markdown/JSON files. Use vector search when you need semantic retrieval. No complex database required.
 
-**Example:**
-```
-You: [uploads RFP PDF]
-     "Analyze this and tell me if I should bid"
-
-AI: ## RFP Summary: DOE Cybersecurity Assessment Services
-
-    **Bid/No-Bid Factors:**
-    ✓ Set-aside: Small Business (you qualify)
-    ✓ NAICS 541512 (your primary)
-    ✓ Value: $400K (in your sweet spot)
-    ⚠ Requires TS clearance (do you have this?)
-    ✗ Requires 3 past performance refs (you have 2)
-
-    **Recommendation:** Marginal. The past performance gap is a problem.
-    Options: (1) Team with someone who has refs, (2) No-bid
-
-    Want me to pull the full requirements matrix?
-```
-
-### 3.3 Proposal Writer
-
-**What it does:**
-- Draft proposal sections based on RFP requirements
-- Maintain your voice and style
-- Pull from your past proposals and templates
-- Technical approach, management approach, past performance
-
-**Example:**
-```
-You: "Draft the technical approach for the DOE cyber RFP.
-      We'll use our standard vulnerability assessment methodology."
-
-AI: ## Technical Approach (Draft - 3 pages)
-
-    ### 1. Understanding of the Requirement
-    [Drafted based on RFP Section C requirements...]
-
-    ### 2. Vulnerability Assessment Methodology
-    [Pulled from your previous DHS proposal, adapted for DOE context...]
-
-    ### 3. Staffing Approach
-    [Based on your resume and typical team structure...]
-
-    ---
-    ⚠ This draft is 3.2 pages. RFP limit is 3 pages.
-    Want me to tighten it up?
-```
-
-### 3.4 Compliance Helper
-
-**What it does:**
-- Quick FAR/DFARS clause lookups
-- Explain what clauses mean in plain English
-- Check if your business practices comply
-
-**Example:**
-```
-You: "What does FAR 52.219-14 mean for me?"
-
-AI: **FAR 52.219-14: Limitations on Subcontracting**
-
-    Plain English: As a small business prime, you must perform at least
-    50% of the labor cost yourself for services contracts.
-
-    For your $400K DOE bid:
-    - You need to perform at least $200K of labor with your own employees
-    - Max $200K can go to subcontractors
-
-    ⚠ If you're planning to sub most of the work to a large business
-    partner, this is a compliance risk.
-```
-
-### 3.5 Deadline Tracker
-
-**What it does:**
-- Track proposal deadlines
-- Remind you of upcoming due dates
-- Sync with Google Calendar
-
-**Example:**
-```
-AI: [Monday morning email]
-
-    ## This Week's Deadlines
-
-    🔴 URGENT: VA IT Support proposal due Wednesday 5pm ET
-       Status: Technical approach done, pricing TBD
-
-    🟡 DOE Cyber RFP questions due Friday
-       Status: Haven't started
-
-    🟢 Next week: DOL maintenance proposal (Mar 22)
-```
-
-### 3.6 Pricing Assistant
-
-**What it does:**
-- Help structure cost proposals
-- Calculate labor costs with your rates
-- Basic price-to-win guidance
-
-**Example:**
-```
-You: "Help me price the VA IT Support bid.
-      It's 1 FTE for 12 months."
-
-AI: ## Rough Pricing Estimate
-
-    Direct Labor:
-    - IT Specialist, 1 FTE x 2080 hrs x $65/hr = $135,200
-
-    With your indirect rates (from last year):
-    - Fringe (32%): $43,264
-    - Overhead (15%): $20,280
-    - G&A (10%): $19,874
-    - Subtotal: $218,618
-    - Fee (10%): $21,862
-
-    **Total: $240,480**
-
-    This is under the $350K ceiling. You have room for:
-    - Adding ODCs (travel, equipment)
-    - Adjusting fee up
-    - Or bidding lean to be competitive
-
-    Want me to build this out in a Google Sheet?
-```
+### 2.4 Tools as Functions
+Tools are just TypeScript functions with JSON schemas. The LLM calls them by name with arguments.
 
 ---
 
-## 4. Technical Implementation
+## 3. Architecture
 
-### What to Build (Minimal)
+### 3.1 High-Level Design
 
-| Component | Implementation | Effort |
-|-----------|---------------|--------|
-| Fed contracting skills | New skill files in `skills/` | 2-3 days |
-| SAM.gov search tool | API integration plugin | 1-2 days |
-| RFP parser tool | PDF extraction + LLM analysis | 2-3 days |
-| Google Drive tool | Already exists in OpenClaw | Config only |
-| Gmail integration | Already exists in OpenClaw | Config only |
-| Memory for your data | Use existing memory system | Config only |
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        Google Cloud                              │
+│                                                                  │
+│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐    │
+│  │   Gmail      │     │  Cloud Run   │     │  Vertex AI   │    │
+│  │   Trigger    │────▶│    Agent     │────▶│   (Gemini)   │    │
+│  │  (Pub/Sub)   │     │   Service    │     │              │    │
+│  └──────────────┘     └──────┬───────┘     └──────────────┘    │
+│                              │                                   │
+│         ┌────────────────────┼────────────────────┐             │
+│         │                    │                    │             │
+│         ▼                    ▼                    ▼             │
+│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐    │
+│  │    Cloud     │     │  Firestore   │     │    Cloud     │    │
+│  │   Storage    │     │   (State)    │     │  Scheduler   │    │
+│  │  (Files)     │     │              │     │   (Cron)     │    │
+│  └──────────────┘     └──────────────┘     └──────────────┘    │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
 
-### What NOT to Build
+External APIs: SAM.gov │ FPDS │ Gmail │ Drive │ Calendar
+```
 
-- Custom web dashboard (use terminal + email)
-- Subagent orchestration (single agent is fine)
-- Complex approval workflows (it's just you)
-- Analytics/reporting (Google Sheets is fine)
-- Multi-user auth (it's just you)
+### 3.2 Components
 
-### Cost Estimate (Monthly)
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| **Agent Service** | Cloud Run | Core agent logic, tool execution |
+| **LLM** | Vertex AI (Gemini) | Reasoning, generation |
+| **State Store** | Firestore | Conversations, tasks, settings |
+| **File Storage** | Cloud Storage | Skills, memory, documents |
+| **Scheduler** | Cloud Scheduler | Daily digest, reminders |
+| **Email Trigger** | Gmail API + Pub/Sub | Receive messages via email |
+| **Secrets** | Secret Manager | API keys, credentials |
 
-| Item | Cost |
-|------|------|
-| Google Workspace (you probably have this) | $12-18 |
-| LLM API (Claude/Gemini) - moderate use | $50-150 |
-| Hosting (small VM or local) | $0-20 |
-| SAM.gov API | Free |
-| **Total** | **~$75-200/month** |
+### 3.3 Why This Stack
 
-Compare to: Hiring even a part-time proposal coordinator ($2-4K/month)
+| Choice | Reasoning |
+|--------|-----------|
+| **Cloud Run** | Serverless, scales to zero, no servers to manage |
+| **Firestore** | Serverless NoSQL, free tier generous, real-time |
+| **Vertex AI** | Native Google, enterprise SLA, Gemini is good |
+| **Pub/Sub** | Decouple email receipt from processing |
+| **TypeScript** | Type safety, good Gemini SDK, familiar |
 
 ---
 
-## 5. Your Data (Memory)
+## 4. Core Modules
 
-The AI needs to know about YOUR business:
+### 4.1 Agent Core (~500 lines)
 
-### Essential Info to Load
+The heart of the system. Handles the conversation loop.
 
-```
-MEMORY.md or memory/*.md files:
+```typescript
+// src/agent/core.ts
 
-## Company Info
-- Company name, CAGE code, UEI, DUNS
-- NAICS codes (primary and secondary)
-- Small business certifications (SDVOSB, 8(a), HUBZone, etc.)
-- State of incorporation, GSA schedule (if any)
+interface Message {
+  role: 'user' | 'assistant' | 'tool';
+  content: string;
+  toolCalls?: ToolCall[];
+  toolResults?: ToolResult[];
+}
 
-## Past Performance
-- Contract 1: [Agency], [Description], [Value], [Period], [POC]
-- Contract 2: ...
-(Even if you only have 1-2, document them well)
+interface AgentConfig {
+  model: string;
+  systemPrompt: string;
+  tools: Tool[];
+  maxTurns: number;
+}
 
-## Key Personnel
-- Your resume/bio
-- Any regular subcontractors or teammates
+async function runAgent(
+  config: AgentConfig,
+  messages: Message[],
+  context: AgentContext
+): Promise<Message> {
 
-## Pricing
-- Your labor rates by category
-- Indirect rates (fringe, overhead, G&A)
-- Standard fee percentage
+  let turns = 0;
 
-## Preferences
-- Target agencies
-- Types of work you want/don't want
-- Geographic preferences
-- Teaming partners you like working with
-```
+  while (turns < config.maxTurns) {
+    // Call LLM
+    const response = await callGemini({
+      model: config.model,
+      systemPrompt: config.systemPrompt,
+      messages,
+      tools: config.tools,
+    });
 
----
+    // If no tool calls, we're done
+    if (!response.toolCalls?.length) {
+      return response;
+    }
 
-## 6. Day-in-the-Life Scenarios
+    // Execute tool calls
+    const toolResults = await executeTools(response.toolCalls, context);
 
-### Morning Routine
-```
-You: "What's on my plate today?"
+    // Add to conversation
+    messages.push(response);
+    messages.push({ role: 'tool', toolResults });
 
-AI: Good morning. Here's your federal contracting status:
+    turns++;
+  }
 
-    📬 SAM.gov: 3 new opportunities match your profile (summaries below)
-
-    📅 Deadlines:
-    - VA proposal: 2 days (pricing section needs work)
-    - DOE questions: 4 days (haven't started)
-
-    📝 In Progress:
-    - VA technical approach: Done, in Drive
-    - VA past performance: Draft ready for your review
-
-    🔔 Action needed:
-    - VA pricing: Should we work on this today?
-```
-
-### Proposal Crunch Time
-```
-You: "I need to finish the VA proposal today. Help me power through."
-
-AI: Let's do it. Current status:
-
-    ✅ Technical Approach (3 pages) - Done
-    ✅ Management Approach (2 pages) - Done
-    ⏳ Past Performance (2 pages) - Draft ready
-    ❌ Pricing (10 pages) - Not started
-    ❌ Reps & Certs - Need to fill out
-
-    Suggested plan:
-    1. Review past performance draft (15 min)
-    2. I'll build pricing spreadsheet while you review (30 min)
-    3. You fill in final numbers, I'll format (1 hr)
-    4. Reps & certs are standard - I'll pre-fill from your SAM.gov (15 min)
-    5. Final assembly and compliance check (30 min)
-
-    Ready to start with past performance review?
+  throw new Error('Max turns exceeded');
+}
 ```
 
-### Quick Research
+### 4.2 Tool System (~300 lines)
+
+Simple tool definition and execution.
+
+```typescript
+// src/tools/types.ts
+
+interface Tool {
+  name: string;
+  description: string;
+  parameters: JSONSchema;
+  execute: (args: unknown, context: AgentContext) => Promise<string>;
+}
+
+// src/tools/sam-gov.ts
+
+export const samSearchTool: Tool = {
+  name: 'sam_search',
+  description: 'Search SAM.gov for federal contracting opportunities',
+  parameters: {
+    type: 'object',
+    properties: {
+      naics: { type: 'string', description: 'NAICS code to filter by' },
+      setAside: { type: 'string', description: 'Set-aside type (SDVOSB, 8a, etc)' },
+      maxValue: { type: 'number', description: 'Maximum contract value' },
+      keyword: { type: 'string', description: 'Keyword search' },
+    },
+  },
+  async execute(args, context) {
+    const opportunities = await samGovApi.search(args);
+    return JSON.stringify(opportunities, null, 2);
+  },
+};
 ```
-You: "Is there an incumbent on the VA IT contract?"
 
-AI: Checking FPDS...
+### 4.3 Memory System (~400 lines)
 
-    Yes. Current incumbent: TechServe Solutions Inc.
-    - Contract: 36C10X21C0042
-    - Value: $325,000
-    - Period: 2021-2024 (expiring)
-    - Performance: No negative CPARS found
+File-based memory with optional vector search.
 
-    They're a small business too. This will be competitive.
-    Want me to dig into their past VA work?
+```typescript
+// src/memory/store.ts
+
+interface MemoryStore {
+  // Core files (always loaded into context)
+  getCompanyInfo(): Promise<string>;
+  getPastPerformance(): Promise<string>;
+  getRates(): Promise<string>;
+
+  // Search (for larger knowledge bases)
+  search(query: string, limit?: number): Promise<SearchResult[]>;
+
+  // Conversation history
+  getConversation(id: string): Promise<Message[]>;
+  saveConversation(id: string, messages: Message[]): Promise<void>;
+}
+
+// Implementation using Cloud Storage + Firestore
+class CloudMemoryStore implements MemoryStore {
+  constructor(
+    private storage: Storage,
+    private firestore: Firestore,
+    private embeddings: EmbeddingsClient,
+  ) {}
+
+  async getCompanyInfo() {
+    return this.storage.bucket('memory').file('company.md').download();
+  }
+
+  async search(query: string, limit = 5) {
+    const embedding = await this.embeddings.embed(query);
+    // Query Firestore vector index
+    return this.firestore
+      .collection('embeddings')
+      .findNearest('embedding', embedding, { limit });
+  }
+}
+```
+
+### 4.4 Skills System (~200 lines)
+
+Load markdown skill files and inject into system prompt.
+
+```typescript
+// src/skills/loader.ts
+
+interface Skill {
+  name: string;
+  description: string;
+  content: string;
+}
+
+async function loadSkills(bucket: Bucket): Promise<Skill[]> {
+  const files = await bucket.getFiles({ prefix: 'skills/' });
+
+  return Promise.all(
+    files.map(async (file) => {
+      const content = await file.download();
+      const { data, content: body } = parseFrontmatter(content);
+      return {
+        name: data.name,
+        description: data.description,
+        content: body,
+      };
+    })
+  );
+}
+
+function buildSystemPrompt(skills: Skill[], memory: string): string {
+  return `
+You are a federal contracting assistant for a small business.
+
+## Your Knowledge
+${memory}
+
+## Skills
+${skills.map(s => `### ${s.name}\n${s.content}`).join('\n\n')}
+
+## Guidelines
+- Be concise and actionable
+- Cite specific sources (RFP sections, FAR clauses)
+- Flag risks and compliance issues
+- Ask clarifying questions when needed
+`;
+}
+```
+
+### 4.5 Email Channel (~300 lines)
+
+Receive and send emails via Gmail API.
+
+```typescript
+// src/channels/gmail.ts
+
+// Pub/Sub handler for incoming emails
+export async function handleEmailPush(message: PubSubMessage) {
+  const { emailId } = JSON.parse(message.data);
+
+  // Fetch email content
+  const email = await gmail.users.messages.get({
+    userId: 'me',
+    id: emailId,
+  });
+
+  // Extract text content
+  const userMessage = extractEmailBody(email);
+  const conversationId = extractConversationId(email);
+
+  // Load conversation history
+  const history = await memory.getConversation(conversationId);
+
+  // Run agent
+  const response = await runAgent(config, [...history, {
+    role: 'user',
+    content: userMessage,
+  }], context);
+
+  // Save updated conversation
+  await memory.saveConversation(conversationId, [...history, response]);
+
+  // Send reply
+  await gmail.users.messages.send({
+    userId: 'me',
+    requestBody: {
+      threadId: email.threadId,
+      raw: buildReplyEmail(email, response.content),
+    },
+  });
+}
 ```
 
 ---
 
-## 7. Getting Started (Phase 1)
+## 5. File Structure
 
-### Week 1: Foundation
-- [ ] Fork OpenClaw, basic setup
-- [ ] Configure Gmail/Google Chat channel
-- [ ] Load your company info into memory
-- [ ] Test basic interactions
+```
+fedai/
+├── src/
+│   ├── agent/
+│   │   ├── core.ts           # Agent loop
+│   │   ├── gemini.ts         # Vertex AI client
+│   │   └── types.ts          # Core types
+│   ├── tools/
+│   │   ├── index.ts          # Tool registry
+│   │   ├── types.ts          # Tool interface
+│   │   ├── sam-gov.ts        # SAM.gov search
+│   │   ├── fpds.ts           # FPDS lookup
+│   │   ├── drive.ts          # Google Drive ops
+│   │   ├── calendar.ts       # Calendar ops
+│   │   └── web-search.ts     # Web search
+│   ├── memory/
+│   │   ├── store.ts          # Memory interface
+│   │   ├── cloud-store.ts    # Cloud Storage impl
+│   │   └── embeddings.ts     # Vector search
+│   ├── skills/
+│   │   └── loader.ts         # Skill loading
+│   ├── channels/
+│   │   ├── gmail.ts          # Email channel
+│   │   └── http.ts           # HTTP API (optional)
+│   └── index.ts              # Cloud Run entrypoint
+├── skills/                    # Skill markdown files
+│   ├── opportunity-search.md
+│   ├── rfp-analysis.md
+│   ├── proposal-writing.md
+│   ├── pricing.md
+│   └── compliance.md
+├── memory/                    # Memory files (synced to Cloud Storage)
+│   ├── company.md
+│   ├── past-performance.md
+│   ├── rates.md
+│   └── templates/
+├── infrastructure/            # Terraform/Pulumi
+│   ├── main.tf
+│   └── variables.tf
+├── package.json
+├── tsconfig.json
+└── Dockerfile
+```
 
-### Week 2: Core Skills
-- [ ] Add SAM.gov search skill
-- [ ] Add basic RFP analysis skill
-- [ ] Add FAR lookup skill
-- [ ] Test with a real opportunity
-
-### Week 3: Proposal Support
-- [ ] Add proposal writing skill
-- [ ] Load your past proposals as templates
-- [ ] Add pricing helper skill
-- [ ] Do a dry run on a practice proposal
-
-### Week 4: Polish
-- [ ] Set up daily opportunity digest
-- [ ] Configure deadline reminders
-- [ ] Fine-tune based on what's working
-- [ ] Start using it for real bids
-
----
-
-## 8. Growing Later (When You Win Contracts)
-
-Once you're winning work and have revenue, you can add:
-
-| When | Add |
-|------|-----|
-| First contract win | Contract management skill (deliverables, invoicing) |
-| Revenue > $250K | Basic CRM in Google Sheets |
-| Hiring first employee | Multi-user access, task assignment |
-| Revenue > $500K | Past performance database, better analytics |
-| Multiple employees | Consider the enterprise features |
-
-But that's future you's problem. Focus on winning first.
-
----
-
-## Appendix: Quick Glossary
-
-| Term | What It Means |
-|------|---------------|
-| SAM.gov | Where all federal opportunities are posted |
-| NAICS | Industry codes - yours determines what you can bid on |
-| Set-aside | Contracts reserved for small businesses |
-| FAR | Federal Acquisition Regulation - the rules |
-| FPDS | Database of who won what contracts |
-| CAGE | Your company's unique ID for federal work |
-| Past Performance | Your track record - critical for winning |
-| Pwin | Probability of win - is this worth your time? |
+**Total estimated code: ~2,000 lines** (vs OpenClaw's 50K+)
 
 ---
 
-*This is the bootstrap version. Keep it simple, win some contracts, then grow.*
+## 6. Tools to Build
+
+### 6.1 MVP Tools (Week 1-2)
+
+| Tool | Purpose | API |
+|------|---------|-----|
+| `sam_search` | Find opportunities | SAM.gov API (free) |
+| `fpds_lookup` | Research incumbents | FPDS API (free) |
+| `web_search` | General research | Google Search API or Serper |
+| `memory_search` | Search your knowledge | Internal |
+| `memory_read` | Read specific files | Internal |
+
+### 6.2 Google Workspace Tools (Week 3)
+
+| Tool | Purpose | API |
+|------|---------|-----|
+| `drive_list` | List files in folder | Drive API |
+| `drive_read` | Read document content | Drive API |
+| `drive_write` | Create/update documents | Drive API |
+| `calendar_create` | Add deadlines | Calendar API |
+| `calendar_list` | Check schedule | Calendar API |
+| `sheets_read` | Read spreadsheet data | Sheets API |
+| `sheets_write` | Update spreadsheets | Sheets API |
+
+### 6.3 Later Tools (When Needed)
+
+| Tool | Purpose | When |
+|------|---------|------|
+| `send_email` | Outbound emails | When you need to reach out |
+| `pdf_parse` | Extract RFP text | When analyzing RFPs |
+| `price_calculate` | Pricing formulas | When your rates are complex |
+
+---
+
+## 7. Skills to Write
+
+### 7.1 Core Skills
+
+```markdown
+# skills/opportunity-search.md
+---
+name: opportunity-search
+description: Find and qualify federal opportunities
+---
+
+When the user asks about opportunities, use these steps:
+
+1. **Search SAM.gov** using the sam_search tool
+   - Filter by their NAICS codes (from memory)
+   - Filter by set-aside type (from memory)
+   - Filter by reasonable contract value
+
+2. **Qualify each opportunity**
+   - Check: Do we meet the set-aside requirements?
+   - Check: Is the NAICS code a match?
+   - Check: Are there showstopper requirements (clearances, etc)?
+   - Check: Is the timeline reasonable?
+
+3. **Present results** with:
+   - Solicitation number and title
+   - Agency
+   - Due date
+   - Estimated value
+   - Set-aside type
+   - Quick assessment: Good fit / Maybe / Skip
+
+Always reference the user's company profile from memory.
+```
+
+```markdown
+# skills/rfp-analysis.md
+---
+name: rfp-analysis
+description: Analyze RFPs and extract key information
+---
+
+When given an RFP document:
+
+1. **Extract basics**
+   - Solicitation number
+   - Title
+   - Agency / Contracting Office
+   - Response deadline
+   - Set-aside type
+   - NAICS code
+   - Estimated value
+
+2. **Find evaluation criteria** (Section M)
+   - List each factor
+   - Note relative importance/weights
+   - Identify discriminators
+
+3. **Find instructions** (Section L)
+   - Page limits per volume
+   - Required sections
+   - Format requirements
+   - Submission instructions
+
+4. **Identify requirements** (Section C/SOW)
+   - Key deliverables
+   - Performance standards
+   - Required certifications/clearances
+   - Location requirements
+
+5. **Bid/No-Bid assessment**
+   Compare against user's profile:
+   - Do we qualify? (set-aside, NAICS)
+   - Do we have relevant past performance?
+   - Can we meet special requirements?
+   - Is timeline achievable?
+
+Provide clear recommendation with reasoning.
+```
+
+```markdown
+# skills/proposal-writing.md
+---
+name: proposal-writing
+description: Help draft proposal sections
+---
+
+When drafting proposal content:
+
+## Style Guidelines
+- Active voice ("We will deliver..." not "Services will be delivered...")
+- Specific metrics and outcomes
+- Reference RFP requirements by section number
+- Short paragraphs (3-4 sentences max)
+- Bold key points for skimmability
+
+## Section Structures
+
+### Technical Approach
+1. Understanding (prove you get the problem)
+2. Solution (how you'll solve it)
+3. Methodology (your process)
+4. Staffing (who does what)
+5. Tools/Technology (what you'll use)
+
+### Past Performance
+1. Contract info (number, agency, value, period)
+2. Relevance (why this matters for current bid)
+3. Accomplishments (specific, quantified)
+4. Customer contact
+
+### Management Approach
+1. Organization structure
+2. Key personnel
+3. Quality control
+4. Risk management
+5. Communication plan
+
+## Process
+1. Review RFP requirements
+2. Check memory for relevant past work
+3. Draft section following structure
+4. Check page limits
+5. Flag any compliance concerns
+```
+
+---
+
+## 8. Security Model
+
+### 8.1 Authentication & Access
+
+| Layer | Method |
+|-------|--------|
+| **Cloud Run** | IAM - only Gmail push can invoke |
+| **Gmail** | OAuth - your Google account only |
+| **APIs** | Service account with minimal permissions |
+| **Secrets** | Secret Manager - no secrets in code |
+
+### 8.2 Data Protection
+
+| Data | Protection |
+|------|------------|
+| **Conversations** | Firestore - encrypted at rest |
+| **Memory files** | Cloud Storage - encrypted at rest |
+| **API keys** | Secret Manager - never logged |
+| **Emails** | Processed in memory, not stored long-term |
+
+### 8.3 What We DON'T Do
+
+- No storing credentials in files
+- No complex multi-tenant auth
+- No session tokens to manage
+- No multiple auth providers
+- No webhook URLs to secure
+
+---
+
+## 9. Cost Model
+
+### 9.1 Google Cloud (Free Tier Covers Most)
+
+| Service | Free Tier | Your Usage | Cost |
+|---------|-----------|------------|------|
+| Cloud Run | 2M requests/month | ~1K/month | $0 |
+| Firestore | 1GB storage, 50K reads/day | Minimal | $0 |
+| Cloud Storage | 5GB | ~100MB | $0 |
+| Pub/Sub | 10GB/month | Minimal | $0 |
+| Secret Manager | 6 active versions | ~5 secrets | $0 |
+| **Cloud Total** | | | **~$0-5/month** |
+
+### 9.2 Vertex AI (Gemini)
+
+| Model | Input | Output | Estimate |
+|-------|-------|--------|----------|
+| Gemini 1.5 Flash | $0.075/1M tokens | $0.30/1M tokens | ~$20-50/month |
+| Gemini 1.5 Pro | $1.25/1M tokens | $5.00/1M tokens | ~$50-150/month |
+
+**Recommendation:** Use Flash for most tasks, Pro for complex analysis.
+
+### 9.3 External APIs
+
+| API | Cost |
+|-----|------|
+| SAM.gov | Free |
+| FPDS | Free |
+| Google Workspace | $12-18/month (you have this) |
+| **Total** | **$0** |
+
+### 9.4 Total Monthly Cost
+
+| Scenario | Cost |
+|----------|------|
+| Light usage (10 conversations/day) | ~$25-40/month |
+| Moderate usage (30 conversations/day) | ~$50-80/month |
+| Heavy usage (100 conversations/day) | ~$100-150/month |
+
+---
+
+## 10. What You're NOT Building
+
+Keep it simple. Don't build:
+
+| Feature | Why Not |
+|---------|---------|
+| Web dashboard | Email is your interface |
+| User authentication | It's just you |
+| Multi-agent orchestration | One agent is enough |
+| Custom vector database | Firestore vector search is fine |
+| Real-time streaming | Email doesn't need it |
+| Plugin system | Hardcode your tools |
+| Multiple channels | Email + maybe HTTP API |
+| Approval workflows | You approve by replying |
+| Analytics dashboard | Check Firestore when curious |
+
+You can add any of these later. Start without them.
+
+---
+
+## 11. Example Interactions
+
+### Morning Briefing (Scheduled)
+
+```
+From: FedAI <fedai@yourdomain.com>
+To: you@yourdomain.com
+Subject: Daily Federal Contracting Brief - Feb 5
+
+Good morning! Here's what's new:
+
+## New Opportunities (3 matches)
+
+1. **VA IT Helpdesk Support**
+   - Solicitation: 36C10X24R0089
+   - Value: $280K | Due: Feb 28
+   - Set-aside: SDVOSB ✓
+   - Assessment: Good fit. Matches your NAICS and set-aside.
+
+2. **DOE Cybersecurity Assessment**
+   - Solicitation: DE-SOL-0012345
+   - Value: $500K | Due: Mar 15
+   - Set-aside: Small Business ✓
+   - Assessment: Check clearance requirement (Secret).
+
+3. **HHS Data Analytics**
+   - Solicitation: HHS-NIH-2024-001
+   - Value: $1.2M | Due: Mar 22
+   - Set-aside: 8(a) ✗
+   - Assessment: Not eligible unless teaming.
+
+## Deadlines
+No proposals due this week.
+
+---
+Reply to this email to discuss any opportunity.
+```
+
+### RFP Analysis
+
+```
+From: you@yourdomain.com
+To: fedai@yourdomain.com
+Subject: Re: Daily Federal Contracting Brief
+
+[Attached: VA-IT-Helpdesk-RFP.pdf]
+
+Analyze this RFP and tell me if we should bid.
+
+---
+
+From: FedAI <fedai@yourdomain.com>
+
+## RFP Analysis: VA IT Helpdesk Support
+
+### Basics
+- Solicitation: 36C10X24R0089
+- Agency: Department of Veterans Affairs
+- Due: February 28, 2024, 2:00 PM ET
+- Value: $280,000 (Firm Fixed Price)
+- Period: Base + 2 Option Years
+- Set-aside: SDVOSB
+
+### Evaluation Criteria (Section M)
+1. Technical Approach (Most Important)
+2. Past Performance (Important)
+3. Price (Less Important than Technical/PP)
+
+LPTA: No. Best Value.
+
+### Page Limits
+- Technical: 10 pages
+- Past Performance: 5 pages
+- Price: No limit
+
+### Key Requirements
+- Help desk support for VA regional office
+- 8x5 coverage (not 24/7 ✓)
+- 2 FTEs required
+- No clearance required ✓
+- Location: Remote acceptable ✓
+
+### Bid/No-Bid Assessment
+
+✅ **Recommend: BID**
+
+Reasons:
+- You qualify (SDVOSB, NAICS 541512)
+- No clearance barrier
+- Remote work allowed
+- Value is in your sweet spot
+- You have relevant help desk past performance
+
+Concerns:
+- Need 2 past performance refs (you have 2 ✓)
+- Tight timeline (23 days)
+
+Want me to start drafting the technical approach?
+```
+
+---
+
+## Appendix: Key Differences from OpenClaw
+
+| Aspect | OpenClaw | FedAI (Your Build) |
+|--------|----------|-------------------|
+| **Lines of code** | 50,000+ | ~2,000 |
+| **Deployment** | Local/VM | Cloud Run (serverless) |
+| **State** | SQLite + files | Firestore |
+| **LLM** | Multi-provider | Vertex AI only |
+| **Channels** | 10+ (WhatsApp, Telegram, etc) | Email only |
+| **Auth** | Complex multi-provider | Google IAM |
+| **Tools** | Plugin system | Hardcoded |
+| **Skills** | Bundled + workspace | Your skills only |
+| **Cost** | Server + multiple APIs | ~$50/month |
+| **Maintenance** | Track upstream | You own it |
+
+---
+
+*Build only what you need. Add more when you need it.*
