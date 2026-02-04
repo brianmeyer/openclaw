@@ -27,5 +27,24 @@
 - [ ] Investigate why autosave stopped working (noted 2026-02-02 09:45).
 - [ ] Confirm current custody week (A or B).
 
+## 📝 Daily Reflections
+
+### 2026-02-03
+**Daily Reflection** (Cost: $0.0012, 945 episodes)
+
+Today's conversations focused on system health checks, nightly job reports, and exploring skills on ClawHub for setting up Twilio to make phone calls. Systems healthy, nightly jobs running successfully. Installed "phone-calls-bland" and "phone-agent" skills.
+
+**Key Topics:**
+- System health checks (MollyGraph, Autosave, Nightly jobs)
+- Cron job scheduling for daily/weekly reflections
+- ClawHub skill exploration
+
+**Decisions Made:**
+- Installed phone-calls-bland and phone-agent skills
+
+**Action Items:**
+- Test phone skills
+- Investigate latency optimization
+
 ---
 *Raw logs archived in `memory/YYYY-MM-DD.md`*
