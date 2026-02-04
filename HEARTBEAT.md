@@ -62,7 +62,7 @@
 
 ## Troubleshooting
 - If health check fails: Check Ollama is running (`ollama serve`)
-- If no embeddings: Check nomic-embed-text model is pulled (`ollama pull nomic-embed-text`)
+- If no embeddings: Check embeddingGemma model is pulled (`ollama pull embeddingGemma`)
 - To clear data: curl -X DELETE http://localhost:8001/clear
 
 ## Server Info
