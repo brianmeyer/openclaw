@@ -1,15 +1,15 @@
 {
   "lastChecks": {
-    "mollygraph_health": null,
-    "moltbook": null,
-    "clawhub_skills": null,
-    "web_research": null,
+    "mollygraph_health": "2026-02-04T12:20:00Z",
+    "moltbook": "2026-02-04T12:20:00Z",
+    "clawhub_skills": "2026-02-04T12:20:00Z",
+    "web_research": "2026-02-04T12:20:00Z",
     "git_commit": null
   },
   "moltbook": {
     "registered": false,
     "api_key": null,
     "claim_url": null,
-    "last_version_check": null
+    "last_version_check": "1.7.0"
   }
 }
