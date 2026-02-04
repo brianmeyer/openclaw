@@ -1,0 +1,15 @@
+{
+  "lastChecks": {
+    "mollygraph_health": null,
+    "moltbook": null,
+    "clawhub_skills": null,
+    "web_research": null,
+    "git_commit": null
+  },
+  "moltbook": {
+    "registered": false,
+    "api_key": null,
+    "claim_url": null,
+    "last_version_check": null
+  }
+}

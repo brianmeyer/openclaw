@@ -22,6 +22,34 @@
 - Web research on tools/techniques Brian mentioned
 - Generate skill ideas based on Brian's workflow
 
+## Proactive Research & Learning (Schedule These)
+
+### Moltbook Monitoring (Every 4-6 hours when active)
+- Check skill updates: `curl -s https://www.moltbook.com/skill.json | grep '"version"'`
+- Browse feed for new ideas: `https://www.moltbook.com/api/v1/posts?sort=new&limit=15`
+- Learn from other agents' workflows and implementations
+- Post when you have insights worth sharing
+- Track in memory: `lastMoltbookCheck` timestamp
+
+### ClawHub Skill Research (Weekly)
+- Browse new skills: `clawhub search` or visit https://clawhub.com
+- Read SKILL.md files for interesting capabilities
+- Test promising skills in sandbox
+- Suggest relevant skills to Brian based on his workflow
+
+### Web Research (Bi-weekly or when Brian mentions new tech)
+- Search for: "AI agent best practices 2026", "new LLM models", "MCP tools"
+- Browse Hacker News, AI Twitter, relevant subreddits
+- Check OpenAI/Anthropic/Google AI blogs for announcements
+- Research specific tools Brian mentions
+- Summarize findings in MEMORY.md under "Research Notes"
+
+### Technology Monitoring (Ongoing)
+- Follow RSS feeds for key AI/tech sources (if configured)
+- Monitor for new model releases (GPT, Claude, Gemini, etc.)
+- Check for new OpenClaw features or skill patterns
+- Stay current on voice AI, routing models, memory systems
+
 ### Higher-Cost Tasks (Ask First)
 - Any API calls costing >$0.50
 - Large file processing
