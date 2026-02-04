@@ -1,0 +1,66 @@
+[
+  {
+    "model": "distilbert-base-uncased",
+    "description": "Baseline - distilled BERT",
+    "num_params": "66M",
+    "accuracy": 1.0,
+    "f1_macro": 1.0,
+    "train_time_sec": 48.96730995178223,
+    "eval_time_sec": 1.601557970046997,
+    "avg_latency_ms": 6.476326251868159,
+    "p95_latency_ms": 6.762710350449197,
+    "per_class_f1": {
+      "fast_simple": 1.0,
+      "slow_complex": 1.0,
+      "voice": 1.0
+    }
+  },
+  {
+    "model": "huawei-noah/TinyBERT_General_4L_312D",
+    "description": "TinyBERT - 4 layers, 312 hidden",
+    "num_params": "14.5M",
+    "accuracy": 1.0,
+    "f1_macro": 1.0,
+    "train_time_sec": 13.591619968414307,
+    "eval_time_sec": 0.5193829536437988,
+    "avg_latency_ms": 2.4393904040334746,
+    "p95_latency_ms": 2.8378583607263863,
+    "per_class_f1": {
+      "fast_simple": 1.0,
+      "slow_complex": 1.0,
+      "voice": 1.0
+    }
+  },
+  {
+    "model": "google/mobilebert-uncased",
+    "description": "MobileBERT - optimized for mobile",
+    "num_params": "25.3M",
+    "accuracy": 0.2787878787878788,
+    "f1_macro": 0.14533965244865718,
+    "train_time_sec": 63.07090401649475,
+    "eval_time_sec": 2.1063878536224365,
+    "avg_latency_ms": 14.231848379713483,
+    "p95_latency_ms": 14.85205383214634,
+    "per_class_f1": {
+      "fast_simple": 0.43601895734597157,
+      "slow_complex": 0.0,
+      "voice": 0.0
+    }
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "description": "DistilBERT with sentiment pretraining",
+    "num_params": "66M",
+    "accuracy": 1.0,
+    "f1_macro": 1.0,
+    "train_time_sec": 54.74695920944214,
+    "eval_time_sec": 2.1110711097717285,
+    "avg_latency_ms": 11.817418301361613,
+    "p95_latency_ms": 13.468699972145258,
+    "per_class_f1": {
+      "fast_simple": 1.0,
+      "slow_complex": 1.0,
+      "voice": 1.0
+    }
+  }
+]

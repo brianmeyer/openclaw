@@ -1,0 +1,823 @@
+text,label
+what's that word for when you... never mind,2
+Set thermostat to 72,0
+Write a function to sort a list of dictionaries by multiple keys,1
+Help me set up Kubernetes deployment with health checks?,1
+What time is it?.,0
+Analyze the time complexity of this recursive algorithm?,1
+Design a distributed rate limiter.,1
+Turn off bedroom light,0
+Can you help me set up kubernetes deployment with health checks,1
+Analyze the time complexity of this recursive algorithm,1
+What's the weather?.,0
+Help me design a database schema for a social media app with 10M users,1
+Compare react vs vue for a large enterprise app with 100+ devs,1
+Can you do i need an umbrella?,0
+Optimize this API endpoint for sub-100ms response time,1
+Timer 5 minutes,0
+Can you is it raining?,0
+Design a caching strategy for this read-heavy workload,1
+"Hey, what's playing?",0
+"Hey, what's wrong with this sql query execution plan?",1
+How many ounces in a cup?,0
+"Well, um, you see, the thing is, i need to, like, find out about...",2
+Do i need an umbrella?,0
+explain this error: nullpointerexception,1
+Troubleshoot this intermittent 502 Bad Gateway error,1
+What's the capital of france?,0
+How many days in February?,0
+Help me optimize this SQL query that's taking 5 seconds,1
+Latest news headlines,0
+Can you set up a ci/cd pipeline for this node.js project,1
+"so, like, what's the weather?",2
+"Can you wait, no, actually, what i meant was... what's the weather?",2
+How many days in February?.,0
+"I don't really know how to put this but, um...",2
+Set a reminder for 3pm?,0
+What's today's date?,0
+"Well, um, you see, the thing is, I need to, like, find out about...",2
+"Hey, what time is it?",0
+When is sunset?,0
+Define serendipity,0
+Debug why my docker container keeps crashing,1
+"Hey, set up a ci/cd pipeline for this node.js project",1
+Can you configure nginx as a reverse proxy with rate limiting,1
+Set thermostat to 72.,0
+should i use microservices or monolith for this architecture?,1
+Can you what's the capital of france?,0
+Play some jazz?,0
+"Hey, turn on the lights",0
+"so, like, i was thinking maybe, possibly, could you...",2
+"Hey, convert 100c to f",0
+"uh, like, can you tell me?",2
+Compare React vs Vue for a large enterprise app with 100+ devs?,1
+Create a regex that matches valid email addresses but not IPs,1
+What's today's date?,0
+What's the stock price of AAPL?.,0
+Design a blue-green deployment strategy for zero downtime.,1
+Can you what day is it?,0
+What's the stock price of AAPL?,0
+What's Bitcoin at?,0
+What day is it?,0
+Configure nginx as a reverse proxy with rate limiting,1
+"It's kind of, you know, like, complicated but...",2
+Profile this code and suggest memory optimizations,1
+Set a reminder for 3pm,0
+What's playing?.,0
+How hot is it outside?.,0
+"um, so, can you tell me?",2
+Help me set up Kubernetes deployment with health checks,1
+Explain the tradeoffs between REST and GraphQL for a mobile app?,1
+"basically, uh, remind me about that thing?",2
+"Hey, explain how bitcoin's proof of work consensus actually works",1
+Will it snow today?,0
+Do I need an umbrella?.,0
+What's that word for when you... never mind,2
+Turn up the volume,0
+What's the temperature?.,0
+Can you analyze this python code and find the bug,1
+Latest news headlines,0
+Design a distributed rate limiter?,1
+"so, well, I need help with something?",2
+create a regex that matches valid email addresses but not ips,1
+Analyze the time complexity of this recursive algorithm,1
+Design a caching strategy for this read-heavy workload,1
+Define serendipity?,0
+Implement a thread-safe singleton in Java?,1
+Explain CAP theorem and help me choose for my use case.,1
+Define serendipity,0
+how many ounces in a cup?,0
+Can you write a unit test for this async function,1
+Turn up the volume?,0
+Create a regex that matches valid email addresses but not IPs,1
+"Wait, no, actually, what I meant was... what's the weather?",2
+I'm not sure how to say this but...,2
+Implement a thread-safe singleton in Java,1
+Set thermostat to 72,0
+when is sunset?,0
+What's 15 times 23?,0
+Latest news headlines,0
+What's Bitcoin at?,0
+Explain how bitcoin's proof of work consensus actually works,1
+"uh, I need help with something?",2
+"i don't really know how to put this but, um...",2
+"Wait, no, actually, what I meant was... what's the weather?.",2
+"so, I need help with something?",2
+Compare React vs Vue for a large enterprise app with 100+ devs,1
+generate a python decorator for caching function results,1
+What's 15 times 23?,0
+Design a blue-green deployment strategy for zero downtime,1
+"basically, remind me about that thing?",2
+Can you design a caching strategy for this read-heavy workload,1
+How can I reduce the bundle size of this React app?.,1
+Analyze this python code and find the bug,1
+"like, so, I need help with something?",2
+"actually, wait, scratch that — i need something else",2
+Can you troubleshoot this intermittent 502 bad gateway error,1
+What's the weather?,0
+Latest news headlines,0
+implement a thread-safe singleton in java,1
+Set a reminder for 3pm.,0
+What day is it?,0
+Can you what's the temperature?,0
+set thermostat to 72,0
+"Can you like, i don't know, i just feel like... can you help me decide?",2
+Skip this song,0
+"so, uh, i was wondering if maybe you could... never mind",2
+"like, basically, um, can you tell me?",2
+"Hey, design a caching strategy for this read-heavy workload",1
+Is it raining?,0
+help me design a database schema for a social media app with 10m users,1
+"Hey, should i use microservices or monolith for this architecture?",1
+Weather forecast,0
+"You know, that restaurant we went to last time... what was it called?.",2
+"um, so, well, I need help with something?",2
+Can you review my react component for performance issues,1
+play some jazz,0
+Optimize this API endpoint for sub-100ms response time,1
+Can you design a distributed rate limiter,1
+"Can you hey, um, do you remember when we talked about...",2
+How many days in february?,0
+How many days in February?,0
+What's wrong with this SQL query execution plan?,1
+Set thermostat to 72,0
+I was gonna ask you something but I forgot.,2
+"well, what's the weather?",2
+"basically, uh, like, remind me about that thing?",2
+Set a reminder for 3pm,0
+How many days in February?,0
+What's the stock price of AAPL?,0
+Can you timer 5 minutes,0
+Explain this error: NullPointerException,1
+i'm not sure how to say this but...,2
+"Hey, what's bitcoin at?",0
+What's 15 times 23?.,0
+Weather forecast?,0
+What's Bitcoin at?,0
+What's Bitcoin at?,0
+Set thermostat to 72?,0
+What's wrong with this SQL query execution plan?,1
+What's 15 times 23?,0
+What's that word for when you... never mind,2
+Write a unit test for this async function,1
+What's 15 times 23?,0
+"Hey, analyze this python code and find the bug",1
+"Actually, wait, scratch that — I need something else.",2
+"You know, that restaurant we went to last time... what was it called?",2
+"like, remind me about that thing?",2
+"I don't really know how to put this but, um...?",2
+"So, like, i was thinking maybe, possibly, could you...",2
+design a url shortener that handles 100m requests/day,1
+analyze the time complexity of this recursive algorithm,1
+"Hey, what day is it?",0
+Optimize this API endpoint for sub-100ms response time,1
+compare react vs vue for a large enterprise app with 100+ devs,1
+Play some jazz,0
+"well, like, can you tell me?",2
+"Hey, implement a thread-safe singleton in java",1
+What's wrong with this SQL query execution plan?,1
+I have this problem but it's hard to explain...,2
+Debug why my Docker container keeps crashing,1
+"Um, hey, can you like... remind me about that thing?",2
+"So, uh, i was wondering if maybe you could... never mind",2
+Troubleshoot this intermittent 502 bad gateway error,1
+Can you optimize this api endpoint for sub-100ms response time,1
+What's the stock price of AAPL?,0
+"You know what, forget it... actually no, wait.",2
+"You know what, forget it... actually no, wait",2
+Set a reminder for 3pm,0
+What time is it?,0
+"So here's the thing, right...",2
+"basically, so, remind me about that thing?",2
+Weather forecast,0
+"Actually, wait, scratch that — I need something else?",2
+what's the stock price of aapl?,0
+what day is it?,0
+"Hey, like, i don't know, i just feel like... can you help me decide?",2
+troubleshoot this intermittent 502 bad gateway error,1
+"uh, well, basically, can you tell me?",2
+"so, well, you know, can you tell me?",2
+Set alarm for 7am,0
+Can you what time is it?,0
+Latest news headlines,0
+"Hey, weather forecast",0
+Set up a CI/CD pipeline for this Node.js project,1
+help me optimize this sql query that's taking 5 seconds,1
+How many days in February?,0
+Set up a CI/CD pipeline for this Node.js project?,1
+"well, so, can you tell me?",2
+Can you what's that word for when you... never mind,2
+"Hey, um, do you remember when we talked about...",2
+Write a function to sort a list of dictionaries by multiple keys,1
+"Hey, how many ounces in a cup?",0
+Convert 100C to F,0
+"you know, well, remind me about that thing?",2
+Help me optimize this SQL query that's taking 5 seconds.,1
+Turn on the lights,0
+"Hey, how can i reduce the bundle size of this react app?",1
+What's Bitcoin at?.,0
+design a caching strategy for this read-heavy workload,1
+"well, can you tell me?",2
+"like, remind me about that thing?",2
+"Hey, what's the stock price of aapl?",0
+Write a unit test for this async function.,1
+"So, like, I was thinking maybe, possibly, could you...?",2
+"um, hey, can you like... remind me about that thing?",2
+Skip this song.,0
+what's playing?,0
+Skip this song,0
+What's playing?,0
+"Actually, wait, scratch that — i need something else",2
+What day is it?,0
+Compare React vs Vue for a large enterprise app with 100+ devs,1
+Can you create a regex that matches valid email addresses but not ips,1
+Analyze the time complexity of this recursive algorithm,1
+Create a regex that matches valid email addresses but not IPs,1
+Do I need an umbrella?,0
+I was gonna ask you something but I forgot,2
+"So, uh, I was wondering if maybe you could... never mind?",2
+Profile this code and suggest memory optimizations.,1
+"so, basically, remind me about that thing?",2
+Play some jazz,0
+How can I reduce the bundle size of this React app?,1
+"well, um, basically, can you tell me?",2
+Design a distributed rate limiter,1
+"Hey, explain cap theorem and help me choose for my use case",1
+"like, what's the weather?",2
+Play some jazz,0
+Can you set thermostat to 72,0
+Create a regex that matches valid email addresses but not IPs.,1
+"um, you know, can you tell me?",2
+Set alarm for 7am,0
+"well, I need help with something?",2
+What's wrong with this SQL query execution plan?,1
+What day is it?,0
+Latest news headlines.,0
+"Hey, analyze the time complexity of this recursive algorithm",1
+What day is it?,0
+Review my React component for performance issues,1
+How many ounces in a cup?.,0
+"uh, remind me about that thing?",2
+How would you build a real-time chat system for 1m concurrent users?,1
+Turn off bedroom light?,0
+analyze this python code and find the bug,1
+Explain how Bitcoin's proof of work consensus actually works,1
+Can you weather forecast,0
+Help me optimize this SQL query that's taking 5 seconds,1
+"Hey, do i need an umbrella?",0
+Write a unit test for this async function?,1
+Explain CAP theorem and help me choose for my use case,1
+How hot is it outside?,0
+What's the stock price of aapl?,0
+Implement a thread-safe singleton in Java,1
+Profile this code and suggest memory optimizations,1
+Can you will it snow today?,0
+What's Bitcoin at?,0
+"like, well, um, I need help with something?",2
+"Hey, skip this song",0
+Create a regex that matches valid email addresses but not IPs?,1
+Should I use microservices or monolith for this architecture?,1
+Skip this song,0
+What's wrong with this SQL query execution plan?,1
+Can you compare react vs vue for a large enterprise app with 100+ devs,1
+write a unit test for this async function,1
+Generate a python decorator for caching function results,1
+"basically, uh, remind me about that thing?",2
+"Hey, set alarm for 7am",0
+What's the temperature?,0
+"Hey, what's the weather?",0
+Create a regex that matches valid email addresses but not IPs,1
+How hot is it outside?,0
+Help me design a database schema for a social media app with 10M users,1
+"Hey, timer 5 minutes",0
+What's the capital of France?,0
+optimize this api endpoint for sub-100ms response time,1
+How would you build a real-time chat system for 1M concurrent users?,1
+What's wrong with this SQL query execution plan?,1
+"basically, remind me about that thing?",2
+Write a unit test for this async function,1
+"So, uh, I was wondering if maybe you could... never mind.",2
+write a function to sort a list of dictionaries by multiple keys,1
+how can i reduce the bundle size of this react app?,1
+What's today's date?,0
+what's 15 times 23?,0
+"so, uh, well, I need help with something?",2
+What's 15 times 23?,0
+Help me optimize this sql query that's taking 5 seconds,1
+"like, basically, can you tell me?",2
+"so, basically, um, what's the weather?",2
+Do I need an umbrella?,0
+"Okay so, uh, basically, what I'm trying to say is...?",2
+Can you design a url shortener that handles 100m requests/day,1
+How can I reduce the bundle size of this React app?,1
+"Can you okay so, uh, basically, what i'm trying to say is...",2
+Compare React vs Vue for a large enterprise app with 100+ devs.,1
+Can you turn off bedroom light,0
+Turn on the lights,0
+Explain the tradeoffs between REST and GraphQL for a mobile app.,1
+Help me design a database schema for a social media app with 10M users,1
+"It's kind of, you know, like, complicated but...?",2
+"um, I need help with something?",2
+Troubleshoot this intermittent 502 Bad Gateway error?,1
+Generate a Python decorator for caching function results,1
+"Hey, write a unit test for this async function",1
+"um, what's the weather?",2
+Can you debug why my docker container keeps crashing,1
+"Hey, help me set up kubernetes deployment with health checks",1
+Design a caching strategy for this read-heavy workload,1
+Explain this error: NullPointerException.,1
+Play some jazz,0
+Should I use microservices or monolith for this architecture?.,1
+What's the weather?,0
+Generate a Python decorator for caching function results,1
+"Hey, set thermostat to 72",0
+Implement a thread-safe singleton in java,1
+"you know, like, basically, what's the weather?",2
+Skip this song,0
+"Hey, help me optimize this sql query that's taking 5 seconds",1
+Design a URL shortener that handles 100M requests/day?,1
+Help me design a database schema for a social media app with 10M users.,1
+Explain the tradeoffs between rest and graphql for a mobile app,1
+"you know, like, what's the weather?",2
+"you know what, forget it... actually no, wait",2
+Can you help me optimize this sql query that's taking 5 seconds,1
+Explain the tradeoffs between REST and GraphQL for a mobile app,1
+debug why my docker container keeps crashing,1
+"it's kind of, you know, like, complicated but...",2
+"Can you just... I mean, like, help me with something?",2
+Turn up the volume,0
+"Hey, so, like, i was thinking maybe, possibly, could you...",2
+"basically, can you tell me?",2
+"you know, so, like, can you tell me?",2
+"so, um, I need help with something?",2
+Will it snow today?,0
+Turn up the volume,0
+Design a caching strategy for this read-heavy workload.,1
+I'm not sure how to say this but...?,2
+"basically, um, like, can you tell me?",2
+Timer 5 minutes?,0
+"I don't really know how to put this but, um...",2
+When is sunset?,0
+Review my React component for performance issues.,1
+"basically, like, well, I need help with something?",2
+Review my React component for performance issues,1
+"Hey, what's the temperature?",0
+Analyze this Python code and find the bug,1
+Can you set a reminder for 3pm,0
+Turn on the lights?,0
+How many ounces in a cup?,0
+"Can you well, um, you see, the thing is, i need to, like, find out about...",2
+Generate a Python decorator for caching function results.,1
+Explain how Bitcoin's proof of work consensus actually works,1
+Timer 5 minutes,0
+I have this problem but it's hard to explain...?,2
+How hot is it outside?,0
+Convert 100c to f,0
+Help me design a database schema for a social media app with 10m users,1
+"um, like, what's the weather?",2
+how would you build a real-time chat system for 1m concurrent users?,1
+Help me optimize this SQL query that's taking 5 seconds,1
+Write a function to sort a list of dictionaries by multiple keys?,1
+"Hey, um, do you remember when we talked about...",2
+Can you help me design a database schema for a social media app with 10m users,1
+Analyze this Python code and find the bug,1
+"You know what, forget it... actually no, wait?",2
+"So, like, I was thinking maybe, possibly, could you...",2
+"So, uh, I was wondering if maybe you could... never mind",2
+When is sunset?.,0
+turn up the volume,0
+Can you explain the tradeoffs between rest and graphql for a mobile app,1
+"uh, so, um, can you tell me?",2
+Set thermostat to 72,0
+"Can you you know, that restaurant we went to last time... what was it called?",2
+When is sunset?,0
+Weather forecast,0
+Can you analyze the time complexity of this recursive algorithm,1
+Can you skip this song,0
+"so, like, um, I need help with something?",2
+what time is it?,0
+"Hey, i'm thinking... maybe... should i call him or text him?",2
+latest news headlines,0
+How many ounces in a cup?,0
+how many days in february?,0
+Explain how Bitcoin's proof of work consensus actually works.,1
+"Hey, actually, wait, scratch that — i need something else",2
+how hot is it outside?,0
+Set alarm for 7am,0
+"Wait, no, actually, what i meant was... what's the weather?",2
+Turn on the lights,0
+Help me set up Kubernetes deployment with health checks,1
+Timer 5 minutes,0
+Troubleshoot this intermittent 502 Bad Gateway error,1
+Turn off bedroom light,0
+"um, like, well, can you tell me?",2
+Explain cap theorem and help me choose for my use case,1
+Help me optimize this SQL query that's taking 5 seconds,1
+Set thermostat to 72,0
+"Can you i don't really know how to put this but, um...",2
+Explain how Bitcoin's proof of work consensus actually works?,1
+"well, um, basically, remind me about that thing?",2
+"uh, can you tell me?",2
+Turn up the volume.,0
+Can you what's today's date?,0
+"Hey, configure nginx as a reverse proxy with rate limiting",1
+"um, I need help with something?",2
+How many ounces in a cup?,0
+Analyze this Python code and find the bug?,1
+"Hey, i have this problem but it's hard to explain...",2
+Analyze the time complexity of this recursive algorithm.,1
+Optimize this API endpoint for sub-100ms response time?,1
+Can you how would you build a real-time chat system for 1m concurrent users?,1
+skip this song,0
+"Actually, wait, scratch that — I need something else",2
+Review my React component for performance issues,1
+"Hey, explain this error: nullpointerexception",1
+How would you build a real-time chat system for 1M concurrent users?,1
+What's bitcoin at?,0
+Can you latest news headlines,0
+Should i use microservices or monolith for this architecture?,1
+How would you build a real-time chat system for 1M concurrent users?,1
+Will it snow today?,0
+How would you build a real-time chat system for 1M concurrent users?.,1
+Troubleshoot this intermittent 502 Bad Gateway error,1
+What's the capital of France?,0
+"Hey, what's that word for when you... never mind",2
+"uh, well, can you tell me?",2
+"Um, hey, can you like... remind me about that thing?.",2
+Explain this error: NullPointerException,1
+"basically, so, remind me about that thing?",2
+"Can you so, uh, i was wondering if maybe you could... never mind",2
+Set thermostat to 72,0
+Explain CAP theorem and help me choose for my use case,1
+"so, remind me about that thing?",2
+what's the capital of france?,0
+"Well, um, you see, the thing is, I need to, like, find out about...?",2
+Write a function to sort a list of dictionaries by multiple keys,1
+"basically, uh, remind me about that thing?",2
+design a blue-green deployment strategy for zero downtime,1
+Play some jazz.,0
+Should I use microservices or monolith for this architecture?,1
+What's 15 times 23?,0
+Convert 100C to F,0
+"Can you so, like, i was thinking maybe, possibly, could you...",2
+I'm thinking... maybe... should i call him or text him?,2
+what's wrong with this sql query execution plan?,1
+Can you i'm not sure how to say this but...,2
+Play some jazz,0
+Turn up the volume,0
+What's that word for when you... never mind.,2
+How would you build a real-time chat system for 1M concurrent users?,1
+"uh, like, um, can you tell me?",2
+Weather forecast,0
+"hey, um, do you remember when we talked about...",2
+Should I use microservices or monolith for this architecture?,1
+I'm thinking... maybe... should I call him or text him?,2
+Design a URL shortener that handles 100M requests/day.,1
+Set a reminder for 3pm,0
+What's 15 times 23?,0
+"like, remind me about that thing?",2
+"you know, remind me about that thing?",2
+Do I need an umbrella?,0
+Can you what's playing?,0
+Help me optimize this SQL query that's taking 5 seconds?,1
+What's the capital of France?,0
+I'm thinking... maybe... should I call him or text him?.,2
+design a distributed rate limiter,1
+Write a unit test for this async function,1
+Will it snow today?,0
+How can i reduce the bundle size of this react app?,1
+"Hey, how many days in february?",0
+"Like, I don't know, I just feel like... can you help me decide?",2
+Latest news headlines,0
+Explain the tradeoffs between REST and GraphQL for a mobile app,1
+Set a reminder for 3pm,0
+Design a caching strategy for this read-heavy workload,1
+"Hey, generate a python decorator for caching function results",1
+How hot is it outside?,0
+Timer 5 minutes,0
+"Hey, turn off bedroom light",0
+Debug why my Docker container keeps crashing,1
+Design a caching strategy for this read-heavy workload,1
+"Um, hey, can you like... remind me about that thing?",2
+Convert 100C to F,0
+Define serendipity,0
+"Hey, i'm not sure how to say this but...",2
+What's the capital of France?,0
+Can you how hot is it outside?,0
+Can you when is sunset?,0
+What's today's date?.,0
+"well, uh, what's the weather?",2
+Can you what's the weather?,0
+What's the weather?,0
+Can you profile this code and suggest memory optimizations,1
+"Hey, compare react vs vue for a large enterprise app with 100+ devs",1
+"um, uh, you know, what's the weather?",2
+Set up a CI/CD pipeline for this Node.js project,1
+Can you generate a python decorator for caching function results,1
+what's the weather?,0
+"Hey, debug why my docker container keeps crashing",1
+Design a URL shortener that handles 100M requests/day,1
+Can you turn on the lights,0
+"like, so, what's the weather?",2
+Weather forecast,0
+Define serendipity,0
+What day is it?,0
+turn on the lights,0
+Configure nginx as a reverse proxy with rate limiting?,1
+What day is it?.,0
+i was gonna ask you something but i forgot,2
+Explain this error: NullPointerException,1
+Help me set up kubernetes deployment with health checks,1
+Set up a ci/cd pipeline for this node.js project,1
+"um, what's the weather?",2
+Review my react component for performance issues,1
+Can you explain this error: nullpointerexception,1
+"like, i don't know, i just feel like... can you help me decide?",2
+"Okay so, uh, basically, what I'm trying to say is...",2
+profile this code and suggest memory optimizations,1
+Explain how Bitcoin's proof of work consensus actually works,1
+what's today's date?,0
+What's today's date?,0
+Can you i'm thinking... maybe... should i call him or text him?,2
+Explain this error: NullPointerException,1
+"Hey, optimize this api endpoint for sub-100ms response time",1
+Set alarm for 7am.,0
+What's playing?,0
+"Hey, write a function to sort a list of dictionaries by multiple keys",1
+"Hey, will it snow today?",0
+Can you play some jazz,0
+"you know, can you tell me?",2
+Design a blue-green deployment strategy for zero downtime?,1
+Can you explain how bitcoin's proof of work consensus actually works,1
+"Hey, how hot is it outside?",0
+I'm not sure how to say this but...,2
+How would you build a real-time chat system for 1M concurrent users?,1
+"Hey, explain the tradeoffs between rest and graphql for a mobile app",1
+What time is it?,0
+"Hey, what's 15 times 23?",0
+Is it raining?,0
+Create a regex that matches valid email addresses but not ips,1
+"Can you actually, wait, scratch that — i need something else",2
+Explain the tradeoffs between REST and GraphQL for a mobile app,1
+"well, uh, can you tell me?",2
+"um, I need help with something?",2
+Can you explain cap theorem and help me choose for my use case,1
+Set alarm for 7am?,0
+Write a unit test for this async function,1
+"you know, um, basically, what's the weather?",2
+Review my React component for performance issues,1
+Should I use microservices or monolith for this architecture?,1
+i'm thinking... maybe... should i call him or text him?,2
+What time is it?,0
+help me set up kubernetes deployment with health checks,1
+Debug why my Docker container keeps crashing?,1
+"uh, well, remind me about that thing?",2
+How would you build a real-time chat system for 1M concurrent users?,1
+Help me set up Kubernetes deployment with health checks,1
+What's the weather?,0
+When is sunset?,0
+Help me optimize this SQL query that's taking 5 seconds,1
+Help me design a database schema for a social media app with 10M users?,1
+Set alarm for 7am,0
+Weather forecast,0
+Optimize this API endpoint for sub-100ms response time.,1
+"basically, like, I need help with something?",2
+"well, uh, basically, remind me about that thing?",2
+Set a reminder for 3pm,0
+"basically, remind me about that thing?",2
+Design a blue-green deployment strategy for zero downtime,1
+"Hey, what's the capital of france?",0
+Will it snow today?.,0
+Explain CAP theorem and help me choose for my use case?,1
+"wait, no, actually, what i meant was... what's the weather?",2
+"like, I need help with something?",2
+"you know, so, what's the weather?",2
+Set up a CI/CD pipeline for this Node.js project,1
+How many days in February?,0
+Help me design a database schema for a social media app with 10M users,1
+"like, basically, you know, remind me about that thing?",2
+"Hey, when is sunset?",0
+"uh, well, remind me about that thing?",2
+"Hey, it's kind of, you know, like, complicated but...",2
+"well, I need help with something?",2
+What's the temperature?,0
+"Hey, review my react component for performance issues",1
+Explain how Bitcoin's proof of work consensus actually works,1
+"Hey, so here's the thing, right...",2
+What's today's date?,0
+"um, I need help with something?",2
+Can you i have this problem but it's hard to explain...,2
+What's wrong with this SQL query execution plan?,1
+Can you how many ounces in a cup?,0
+What's the capital of France?.,0
+is it raining?,0
+"basically, um, uh, what's the weather?",2
+I was gonna ask you something but I forgot?,2
+Generate a Python decorator for caching function results,1
+"like, I need help with something?",2
+Generate a Python decorator for caching function results,1
+"okay so, uh, basically, what i'm trying to say is...",2
+Design a url shortener that handles 100m requests/day,1
+"Hey, play some jazz",0
+Explain how Bitcoin's proof of work consensus actually works,1
+Weather forecast,0
+"It's kind of, you know, like, complicated but...",2
+Explain CAP theorem and help me choose for my use case,1
+Configure nginx as a reverse proxy with rate limiting,1
+Write a unit test for this async function,1
+set a reminder for 3pm,0
+What's wrong with this sql query execution plan?,1
+Write a function to sort a list of dictionaries by multiple keys,1
+"Like, i don't know, i just feel like... can you help me decide?",2
+Turn on the lights.,0
+what's the temperature?,0
+"Like, I don't know, I just feel like... can you help me decide?.",2
+Help me optimize this SQL query that's taking 5 seconds,1
+Can you how many days in february?,0
+Implement a thread-safe singleton in Java,1
+Profile this code and suggest memory optimizations,1
+Timer 5 minutes.,0
+"Hey, define serendipity",0
+I was gonna ask you something but i forgot,2
+"um, remind me about that thing?",2
+"Hey, design a blue-green deployment strategy for zero downtime",1
+"um, can you tell me?",2
+"so, you know, I need help with something?",2
+What's that word for when you... never mind?,2
+"so, you know, I need help with something?",2
+"Hey, set a reminder for 3pm",0
+Turn up the volume,0
+"Can you it's kind of, you know, like, complicated but...",2
+explain the tradeoffs between rest and graphql for a mobile app,1
+"Hey, um, hey, can you like... remind me about that thing?",2
+Configure nginx as a reverse proxy with rate limiting,1
+timer 5 minutes,0
+Optimize this API endpoint for sub-100ms response time,1
+"You know, that restaurant we went to last time... what was it called?",2
+"Can you just... i mean, like, help me with something?",2
+Implement a thread-safe singleton in Java.,1
+define serendipity,0
+Configure nginx as a reverse proxy with rate limiting,1
+Explain CAP theorem and help me choose for my use case,1
+"Can you you know what, forget it... actually no, wait",2
+"like, basically, so, what's the weather?",2
+"um, I need help with something?",2
+I have this problem but it's hard to explain...,2
+"Hey, help me design a database schema for a social media app with 10m users",1
+Is it raining?,0
+Optimize this API endpoint for sub-100ms response time,1
+Can you set alarm for 7am,0
+Can you what's bitcoin at?,0
+Can you convert 100c to f,0
+Generate a Python decorator for caching function results?,1
+turn off bedroom light,0
+"So here's the thing, right...",2
+Convert 100C to F.,0
+Convert 100C to F,0
+"Can you just... I mean, like, help me with something?.",2
+"Hey, you know, that restaurant we went to last time... what was it called?",2
+"well, um, you see, the thing is, i need to, like, find out about...",2
+Can you i was gonna ask you something but i forgot,2
+Profile this code and suggest memory optimizations?,1
+Can you what's 15 times 23?,0
+Turn on the lights,0
+"basically, what's the weather?",2
+"like, can you tell me?",2
+explain how bitcoin's proof of work consensus actually works,1
+What's playing?,0
+"Hey, i don't really know how to put this but, um...",2
+Set up a CI/CD pipeline for this Node.js project,1
+Design a blue-green deployment strategy for zero downtime,1
+What's the temperature?,0
+"like, basically, well, what's the weather?",2
+"well, so, basically, can you tell me?",2
+Design a caching strategy for this read-heavy workload?,1
+"well, um, so, I need help with something?",2
+Profile this code and suggest memory optimizations,1
+"Hey, can you just... i mean, like, help me with something?",2
+i have this problem but it's hard to explain...,2
+How hot is it outside?,0
+"uh, um, basically, can you tell me?",2
+Set thermostat to 72,0
+will it snow today?,0
+How would you build a real-time chat system for 1M concurrent users?,1
+"Hey, latest news headlines",0
+Can you design a blue-green deployment strategy for zero downtime,1
+"Hey, okay so, uh, basically, what i'm trying to say is...",2
+"well, so, basically, what's the weather?",2
+Will it snow today?,0
+Analyze this Python code and find the bug,1
+weather forecast,0
+What's the weather?,0
+"basically, I need help with something?",2
+"Can you um, hey, can you like... remind me about that thing?",2
+Explain this error: nullpointerexception,1
+set up a ci/cd pipeline for this node.js project,1
+What's playing?,0
+"like, so, uh, can you tell me?",2
+"Hey, so, uh, i was wondering if maybe you could... never mind",2
+What's wrong with this SQL query execution plan?.,1
+"Hey, wait, no, actually, what i meant was... what's the weather?",2
+Can you how can i reduce the bundle size of this react app?,1
+"Hey, is it raining?",0
+"Okay so, uh, basically, what i'm trying to say is...",2
+Generate a Python decorator for caching function results,1
+What's the capital of France?,0
+explain cap theorem and help me choose for my use case,1
+How many days in February?,0
+"well, um, basically, remind me about that thing?",2
+Define serendipity.,0
+Explain the tradeoffs between REST and GraphQL for a mobile app,1
+How can I reduce the bundle size of this React app?,1
+"you know, that restaurant we went to last time... what was it called?",2
+do i need an umbrella?,0
+convert 100c to f,0
+Can you implement a thread-safe singleton in java,1
+"Hey, um, do you remember when we talked about...?",2
+Set up a CI/CD pipeline for this Node.js project,1
+Play some jazz,0
+Timer 5 minutes,0
+Debug why my Docker container keeps crashing,1
+"Hey, you know what, forget it... actually no, wait",2
+"Hey, design a url shortener that handles 100m requests/day",1
+Explain CAP theorem and help me choose for my use case,1
+Debug why my Docker container keeps crashing,1
+Debug why my Docker container keeps crashing.,1
+Can you should i use microservices or monolith for this architecture?,1
+Set up a CI/CD pipeline for this Node.js project,1
+Explain this error: NullPointerException,1
+Analyze this Python code and find the bug.,1
+"You know what, forget it... actually no, wait",2
+Generate a Python decorator for caching function results,1
+"so here's the thing, right...",2
+"Hey, design a distributed rate limiter",1
+"Hey, create a regex that matches valid email addresses but not ips",1
+Write a unit test for this async function,1
+what's bitcoin at?,0
+Optimize this API endpoint for sub-100ms response time,1
+Troubleshoot this intermittent 502 Bad Gateway error.,1
+Troubleshoot this intermittent 502 Bad Gateway error,1
+"Hey, what's today's date?",0
+Turn off bedroom light.,0
+Is it raining?,0
+set alarm for 7am,0
+Can you define serendipity,0
+Optimize this api endpoint for sub-100ms response time,1
+"Hey, profile this code and suggest memory optimizations",1
+Set up a CI/CD pipeline for this Node.js project,1
+"Hey, how would you build a real-time chat system for 1m concurrent users?",1
+Will it snow today?,0
+Optimize this API endpoint for sub-100ms response time,1
+Configure nginx as a reverse proxy with rate limiting.,1
+"basically, you know, I need help with something?",2
+Can you write a function to sort a list of dictionaries by multiple keys,1
+Analyze the time complexity of this recursive algorithm,1
+Design a URL shortener that handles 100M requests/day,1
+When is sunset?,0
+"well, so, what's the weather?",2
+Help me set up Kubernetes deployment with health checks.,1
+Can you what's the stock price of aapl?,0
+What's Bitcoin at?,0
+Convert 100C to F?,0
+"you know, basically, I need help with something?",2
+"uh, basically, I need help with something?",2
+"you know, uh, um, I need help with something?",2
+What's Bitcoin at?,0
+What's the temperature?,0
+"Can you so here's the thing, right...",2
+Explain this error: NullPointerException?,1
+Analyze the time complexity of this recursive algorithm,1
+"Hey, troubleshoot this intermittent 502 bad gateway error",1
+Write a function to sort a list of dictionaries by multiple keys.,1
+Weather forecast.,0
+Is it raining?.,0
+Design a distributed rate limiter,1
+What time is it?,0
+Will it snow today?,0
+"basically, well, can you tell me?",2
+What's Bitcoin at?,0
+Analyze this Python code and find the bug,1
+"can you just... i mean, like, help me with something?",2
+configure nginx as a reverse proxy with rate limiting,1
+review my react component for performance issues,1
+Design a caching strategy for this read-heavy workload,1
+How many ounces in a cup?,0
+"um, you know, so, remind me about that thing?",2
+Set thermostat to 72,0
+Profile this code and suggest memory optimizations,1
+Set alarm for 7am,0
+Can you turn up the volume,0
+"So here's the thing, right...?",2
+Set up a CI/CD pipeline for this Node.js project.,1
+Define serendipity,0
+"Hey, turn up the volume",0
+Profile this code and suggest memory optimizations,1
+Latest news headlines?,0
+Turn on the lights,0
+Review my React component for performance issues?,1
+"Hey, i was gonna ask you something but i forgot",2
+Explain how Bitcoin's proof of work consensus actually works,1
+Can you what's wrong with this sql query execution plan?,1
+Skip this song?,0
+"Hey, well, um, you see, the thing is, i need to, like, find out about...",2
+Compare React vs Vue for a large enterprise app with 100+ devs,1

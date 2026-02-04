@@ -1,0 +1,327 @@
+{
+  "test_set": {
+    "accuracy": 1.0,
+    "latencies": {
+      "mean_ms": 3.15010988693261,
+      "p95_ms": 3.8043960637878635,
+      "p99_ms": 7.051827498362398
+    }
+  },
+  "curated_tests": [
+    {
+      "query": "What's the weather?",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9914494156837463,
+      "correct": true
+    },
+    {
+      "query": "Set a timer for 5 minutes",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9912407994270325,
+      "correct": true
+    },
+    {
+      "query": "What time is it?",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9913826584815979,
+      "correct": true
+    },
+    {
+      "query": "Turn off the lights",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9914803504943848,
+      "correct": true
+    },
+    {
+      "query": "What's on my calendar today?",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9908155202865601,
+      "correct": true
+    },
+    {
+      "query": "Remind me to call mom",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9909193515777588,
+      "correct": true
+    },
+    {
+      "query": "Play some music",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.987305223941803,
+      "correct": true
+    },
+    {
+      "query": "What's 15 times 23?",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9911147356033325,
+      "correct": true
+    },
+    {
+      "query": "Define 'serendipity'",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9894735217094421,
+      "correct": true
+    },
+    {
+      "query": "Send a text to Brian",
+      "true_label": "fast_simple",
+      "predicted": "slow_complex",
+      "confidence": 0.5705033540725708,
+      "correct": false
+    },
+    {
+      "query": "What's the news?",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9913041591644287,
+      "correct": true
+    },
+    {
+      "query": "Set an alarm for 7am",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9899243712425232,
+      "correct": true
+    },
+    {
+      "query": "What's the stock price of AAPL?",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9856517314910889,
+      "correct": true
+    },
+    {
+      "query": "How many ounces in a cup?",
+      "true_label": "fast_simple",
+      "predicted": "fast_simple",
+      "confidence": 0.9896008372306824,
+      "correct": true
+    },
+    {
+      "query": "Translate 'hello' to Spanish",
+      "true_label": "fast_simple",
+      "predicted": "slow_complex",
+      "confidence": 0.9437519311904907,
+      "correct": false
+    },
+    {
+      "query": "Analyze this Python code and find the bug",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9921718835830688,
+      "correct": true
+    },
+    {
+      "query": "Write a function to sort a list of dictionaries by multiple keys",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9918918609619141,
+      "correct": true
+    },
+    {
+      "query": "Explain the tradeoffs between REST and GraphQL",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9922580122947693,
+      "correct": true
+    },
+    {
+      "query": "Help me design a database schema for a social media app",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9922122955322266,
+      "correct": true
+    },
+    {
+      "query": "Refactor this function to use async/await",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9908764958381653,
+      "correct": true
+    },
+    {
+      "query": "Compare React vs Vue for a large enterprise app",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9923203587532043,
+      "correct": true
+    },
+    {
+      "query": "Debug why my Docker container keeps crashing",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9666033387184143,
+      "correct": true
+    },
+    {
+      "query": "Create a regex that matches valid email addresses",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9922236204147339,
+      "correct": true
+    },
+    {
+      "query": "Explain how Bitcoin's proof of work actually works",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9911327958106995,
+      "correct": true
+    },
+    {
+      "query": "Help me optimize this SQL query",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.992239236831665,
+      "correct": true
+    },
+    {
+      "query": "Review this architecture diagram and suggest improvements",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9920209050178528,
+      "correct": true
+    },
+    {
+      "query": "Write a unit test for this function",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9911830425262451,
+      "correct": true
+    },
+    {
+      "query": "Explain the difference between concurrency and parallelism",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9921010136604309,
+      "correct": true
+    },
+    {
+      "query": "Help me set up a CI/CD pipeline for this project",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9922329187393188,
+      "correct": true
+    },
+    {
+      "query": "Analyze the time complexity of this algorithm",
+      "true_label": "slow_complex",
+      "predicted": "slow_complex",
+      "confidence": 0.9918301701545715,
+      "correct": true
+    },
+    {
+      "query": "Um, hey, can you like... remind me about that thing?",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9929127097129822,
+      "correct": true
+    },
+    {
+      "query": "Wait, no, actually, what I meant was... what's the weather?",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9927753210067749,
+      "correct": true
+    },
+    {
+      "query": "You know, that restaurant we went to last time... what was it called?",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9932442307472229,
+      "correct": true
+    },
+    {
+      "query": "I'm thinking... maybe... should I call him or text him?",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9903573393821716,
+      "correct": true
+    },
+    {
+      "query": "Like, I don't know, I just feel like... can you help me decide?",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9929041266441345,
+      "correct": true
+    },
+    {
+      "query": "So, uh, I was wondering if maybe you could... never mind",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9929805397987366,
+      "correct": true
+    },
+    {
+      "query": "Actually, wait, scratch that \u2014 I need something else",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9929787516593933,
+      "correct": true
+    },
+    {
+      "query": "Hey, um, do you remember when we talked about...",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9928995370864868,
+      "correct": true
+    },
+    {
+      "query": "I'm not sure how to say this but...",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9906617999076843,
+      "correct": true
+    },
+    {
+      "query": "Can you just... I mean, like, help me with something?",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9928943514823914,
+      "correct": true
+    },
+    {
+      "query": "You know what, forget it... actually no, wait",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9930782914161682,
+      "correct": true
+    },
+    {
+      "query": "I have this problem but it's hard to explain...",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9864329695701599,
+      "correct": true
+    },
+    {
+      "query": "What's that word for when you... never mind",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9930223822593689,
+      "correct": true
+    },
+    {
+      "query": "So here's the thing, right...",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9925591945648193,
+      "correct": true
+    },
+    {
+      "query": "I was gonna ask you something but I forgot",
+      "true_label": "voice",
+      "predicted": "voice",
+      "confidence": 0.9788814783096313,
+      "correct": true
+    }
+  ]
+}

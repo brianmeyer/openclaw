@@ -1,0 +1,1651 @@
+text,label,class
+Good morning,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+"Actually, never mind",2,voice
+Explain relativity in simple terms,1,slow_complex
+"So, what about that meeting?",2,voice
+Hold on a sec,2,voice
+Generate startup ideas,1,slow_complex
+What's the weather?,0,fast_simple
+"So, what about that meeting?",2,voice
+Summarize latest CRISPR research,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Shuffle,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Write a Python script to scrape a website,1,slow_complex
+What time is it?,0,fast_simple
+Write a short story about AI,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+"Uh, remind me to call Mom, thanks",2,voice
+Previous,0,fast_simple
+Who is the president?,0,fast_simple
+Stop,0,fast_simple
+"Hey, are you there?",2,voice
+Turn on the lights,0,fast_simple
+"Actually, never mind",2,voice
+Can you tell me about... uh... AI?,2,voice
+"Actually, wait",2,voice
+How do I get to work?,0,fast_simple
+Can you... um... find that file?,2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+Where is home?,0,fast_simple
+"Wait, go back",2,voice
+Previous,0,fast_simple
+Hold on a sec,2,voice
+Analyze Macbeth themes,1,slow_complex
+Remind me to buy milk,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Stop,0,fast_simple
+Debug this code: print(x),1,slow_complex
+"Yo, play some music",2,voice
+"Okay, sounds good",2,voice
+What was that again?,2,voice
+Design microservices for e-commerce,1,slow_complex
+Help me understand blockchain,1,slow_complex
+"So, what about that meeting?",2,voice
+"Hey, are you there?",2,voice
+Help me understand blockchain,1,slow_complex
+"Yo, play some music",2,voice
+Volume up,0,fast_simple
+Define serendipity,0,fast_simple
+How do I get to work?,0,fast_simple
+Turn off the TV,0,fast_simple
+"Okay, sure thing",2,voice
+What time is it?,0,fast_simple
+Battery level,0,fast_simple
+What's the weather?,0,fast_simple
+Where is home?,0,fast_simple
+"Nah, forget it",2,voice
+Pause music,0,fast_simple
+Hello,0,fast_simple
+You know what I mean?,2,voice
+Write a short story about AI,1,slow_complex
+What was that again?,2,voice
+You know what I mean?,2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Remind me to buy milk,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Write a formal business proposal,1,slow_complex
+"Uh, remind me to call Mom, thanks",2,voice
+Bluetooth on,0,fast_simple
+Who is the president?,0,fast_simple
+"Okay, sure thing",2,voice
+Can you tell me about... uh... AI?,2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+"Nah, forget it",2,voice
+Where is home?,0,fast_simple
+"Nah, forget it",2,voice
+Analyze Macbeth themes,1,slow_complex
+What was that again?,2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+What's my calendar?,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Write a short story about AI,1,slow_complex
+Call Mom,0,fast_simple
+Write a formal business proposal,1,slow_complex
+"Nah, forget it",2,voice
+Generate startup ideas,1,slow_complex
+Next track,0,fast_simple
+Text Brian,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+Create a marketing strategy,1,slow_complex
+"Wait, what?",2,voice
+Write a formal business proposal,1,slow_complex
+"Uh, remind me to call Mom, thanks",2,voice
+Generate startup ideas,1,slow_complex
+Write a short story about AI,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+"Actually, wait",2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+Generate startup ideas,1,slow_complex
+Stop,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Generate startup ideas,1,slow_complex
+"Nah, forget it",2,voice
+"Wait, what?",2,voice
+Previous,0,fast_simple
+Create a marketing strategy,1,slow_complex
+Define serendipity,0,fast_simple
+What was that again?,2,voice
+Can you... um... find that file?,2,voice
+Explain relativity in simple terms,1,slow_complex
+"Yo, play some music",2,voice
+Call Mom,0,fast_simple
+"Yeah, do that",2,voice
+"So, what about that meeting?",2,voice
+"Um, I'm not sure",2,voice
+Explain relativity in simple terms,1,slow_complex
+"Wait, go back",2,voice
+"Actually, wait",2,voice
+Turn on the lights,0,fast_simple
+"Like, can you help?",2,voice
+Write a formal business proposal,1,slow_complex
+What was that again?,2,voice
+"Wait, what?",2,voice
+Next track,0,fast_simple
+Text Brian,0,fast_simple
+Create a marketing strategy,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Remind me to buy milk,0,fast_simple
+Define serendipity,0,fast_simple
+Shuffle,0,fast_simple
+Volume up,0,fast_simple
+Good night,0,fast_simple
+"Nah, forget it",2,voice
+"Yeah, do that",2,voice
+Generate startup ideas,1,slow_complex
+Storage space,0,fast_simple
+Pause music,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Debug this code: print(x),1,slow_complex
+Text Brian,0,fast_simple
+Text Brian,0,fast_simple
+Create a marketing strategy,1,slow_complex
+What's 2+2?,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Write a short story about AI,1,slow_complex
+Pause music,0,fast_simple
+WiFi status,0,fast_simple
+Hold on a sec,2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Write a short story about AI,1,slow_complex
+Write a short story about AI,1,slow_complex
+"Okay, sure thing",2,voice
+Write a formal business proposal,1,slow_complex
+Debug this code: print(x),1,slow_complex
+What was that again?,2,voice
+You know what I mean?,2,voice
+Design microservices for e-commerce,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Turn off the TV,0,fast_simple
+"So, what about that meeting?",2,voice
+WiFi status,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Define serendipity,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+What's the weather?,0,fast_simple
+Write a formal business proposal,1,slow_complex
+"Wait, what?",2,voice
+"Wait, go back",2,voice
+"Hey, can you like, check my calendar?",2,voice
+Hold on a sec,2,voice
+"Hey, can you like, check my calendar?",2,voice
+"Okay, sure thing",2,voice
+Bluetooth on,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Write a short story about AI,1,slow_complex
+Write a formal business proposal,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Can you... um... find that file?,2,voice
+"Yeah, do that",2,voice
+Stop,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Help me understand blockchain,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Goodbye,0,fast_simple
+Remind me to buy milk,0,fast_simple
+Next track,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Good morning,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+Write a short story about AI,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Help me understand blockchain,1,slow_complex
+Generate startup ideas,1,slow_complex
+"Nah, forget it",2,voice
+Write a Python script to scrape a website,1,slow_complex
+Debug this code: print(x),1,slow_complex
+Bluetooth on,0,fast_simple
+"Yo, play some music",2,voice
+What's the weather?,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Can you... um... find that file?,2,voice
+"Wait, what?",2,voice
+Goodbye,0,fast_simple
+Write a short story about AI,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Generate startup ideas,1,slow_complex
+You know what I mean?,2,voice
+"Nah, forget it",2,voice
+Storage space,0,fast_simple
+Storage space,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Call Mom,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Stop,0,fast_simple
+"Uh, remind me to call Mom, thanks",2,voice
+What's the weather?,0,fast_simple
+"Uh, remind me to call Mom, thanks",2,voice
+Who is the president?,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Volume up,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Hold on a sec,2,voice
+Write a formal business proposal,1,slow_complex
+What's my calendar?,0,fast_simple
+"So, what about that meeting?",2,voice
+Design microservices for e-commerce,1,slow_complex
+"Actually, wait",2,voice
+Volume up,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+Battery level,0,fast_simple
+"Um, I'm not sure",2,voice
+Text Brian,0,fast_simple
+"Like, can you help?",2,voice
+You know what I mean?,2,voice
+"Okay, sounds good",2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+"Okay, sure thing",2,voice
+"Wait, what?",2,voice
+Previous,0,fast_simple
+"Um, I'm not sure",2,voice
+Summarize latest CRISPR research,1,slow_complex
+Write a short story about AI,1,slow_complex
+Debug this code: print(x),1,slow_complex
+"Actually, never mind",2,voice
+Goodbye,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Repeat,0,fast_simple
+Generate startup ideas,1,slow_complex
+What's my calendar?,0,fast_simple
+Hello,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Hello,0,fast_simple
+Volume up,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Previous,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+You know what I mean?,2,voice
+What's playing?,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+Define serendipity,0,fast_simple
+What was that again?,2,voice
+"Like, can you help?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Battery level,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+How do I get to work?,0,fast_simple
+"Actually, never mind",2,voice
+Write a short story about AI,1,slow_complex
+"Wait, go back",2,voice
+Debug this code: print(x),1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Help me understand blockchain,1,slow_complex
+Write a short story about AI,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+You know what I mean?,2,voice
+"Wait, what?",2,voice
+Shuffle,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Good night,0,fast_simple
+Battery level,0,fast_simple
+Call Mom,0,fast_simple
+Write a formal business proposal,1,slow_complex
+"Hey, are you there?",2,voice
+Summarize latest CRISPR research,1,slow_complex
+What's the weather?,0,fast_simple
+What's my calendar?,0,fast_simple
+Hello,0,fast_simple
+Next track,0,fast_simple
+Good night,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Debug this code: print(x),1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Can you... um... find that file?,2,voice
+"Like, can you help?",2,voice
+Write a Python script to scrape a website,1,slow_complex
+"Like, can you help?",2,voice
+Debug this code: print(x),1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+"Nah, forget it",2,voice
+"Yo, play some music",2,voice
+Debug this code: print(x),1,slow_complex
+Next track,0,fast_simple
+"Okay, sounds good",2,voice
+"Actually, never mind",2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Generate startup ideas,1,slow_complex
+What time is it?,0,fast_simple
+You know what I mean?,2,voice
+"Okay, sure thing",2,voice
+What's playing?,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Can you... um... find that file?,2,voice
+"Hey, are you there?",2,voice
+"Hey, are you there?",2,voice
+Explain relativity in simple terms,1,slow_complex
+Bluetooth on,0,fast_simple
+WiFi status,0,fast_simple
+"Um, I'm not sure",2,voice
+Analyze Macbeth themes,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+WiFi status,0,fast_simple
+"Okay, sure thing",2,voice
+"Wait, go back",2,voice
+Write a formal business proposal,1,slow_complex
+"So, what about that meeting?",2,voice
+"Yo, play some music",2,voice
+Set a timer for 5 minutes,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Text Brian,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+Write a formal business proposal,1,slow_complex
+"Like, can you help?",2,voice
+Write a short story about AI,1,slow_complex
+Turn on the lights,0,fast_simple
+What's playing?,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+"Actually, never mind",2,voice
+Hello,0,fast_simple
+"Hey, are you there?",2,voice
+Create a marketing strategy,1,slow_complex
+Goodbye,0,fast_simple
+"So, what about that meeting?",2,voice
+Next track,0,fast_simple
+"Actually, never mind",2,voice
+Summarize latest CRISPR research,1,slow_complex
+Write a short story about AI,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+Summarize latest CRISPR research,1,slow_complex
+"Okay, sure thing",2,voice
+Define serendipity,0,fast_simple
+"So, what about that meeting?",2,voice
+"Wait, go back",2,voice
+Write a formal business proposal,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+What was that again?,2,voice
+Good night,0,fast_simple
+Generate startup ideas,1,slow_complex
+"Hey, are you there?",2,voice
+Debug this code: print(x),1,slow_complex
+Good night,0,fast_simple
+You know what I mean?,2,voice
+Where is home?,0,fast_simple
+Write a short story about AI,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Volume up,0,fast_simple
+Who is the president?,0,fast_simple
+What was that again?,2,voice
+Write a short story about AI,1,slow_complex
+"Wait, what?",2,voice
+Set a timer for 5 minutes,0,fast_simple
+What was that again?,2,voice
+Text Brian,0,fast_simple
+"Okay, sounds good",2,voice
+"Hey, are you there?",2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+"So, what about that meeting?",2,voice
+Generate startup ideas,1,slow_complex
+"Yo, play some music",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+"So, what about that meeting?",2,voice
+Can you... um... find that file?,2,voice
+"Yeah, do that",2,voice
+What's playing?,0,fast_simple
+What's the weather?,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Debug this code: print(x),1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+"Wait, go back",2,voice
+Pause music,0,fast_simple
+Set a timer for 5 minutes,0,fast_simple
+What was that again?,2,voice
+Bluetooth on,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Good night,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Repeat,0,fast_simple
+"Nah, forget it",2,voice
+Battery level,0,fast_simple
+What's playing?,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Repeat,0,fast_simple
+"Yeah, do that",2,voice
+Help me understand blockchain,1,slow_complex
+Help me understand blockchain,1,slow_complex
+"Um, I'm not sure",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Create a marketing strategy,1,slow_complex
+Good night,0,fast_simple
+Who is the president?,0,fast_simple
+"Like, can you help?",2,voice
+"Um, I'm not sure",2,voice
+Pause music,0,fast_simple
+Write a formal business proposal,1,slow_complex
+"Okay, sure thing",2,voice
+"Actually, never mind",2,voice
+Can you tell me about... uh... AI?,2,voice
+Hello,0,fast_simple
+Next track,0,fast_simple
+Write a short story about AI,1,slow_complex
+"Okay, sure thing",2,voice
+Battery level,0,fast_simple
+"Nah, forget it",2,voice
+Turn off the TV,0,fast_simple
+"Okay, sounds good",2,voice
+"Hey, are you there?",2,voice
+Generate startup ideas,1,slow_complex
+Debug this code: print(x),1,slow_complex
+Write a formal business proposal,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+Hello,0,fast_simple
+Good night,0,fast_simple
+You know what I mean?,2,voice
+Can you tell me about... uh... AI?,2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Previous,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+"Actually, wait",2,voice
+Design microservices for e-commerce,1,slow_complex
+"So, what about that meeting?",2,voice
+Turn off the TV,0,fast_simple
+What's 2+2?,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Explain relativity in simple terms,1,slow_complex
+What was that again?,2,voice
+Analyze Macbeth themes,1,slow_complex
+Turn on the lights,0,fast_simple
+Create a marketing strategy,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Volume up,0,fast_simple
+"Actually, wait",2,voice
+Help me understand blockchain,1,slow_complex
+"Okay, sure thing",2,voice
+"Um, I'm not sure",2,voice
+"Nah, forget it",2,voice
+"Okay, sure thing",2,voice
+What's my calendar?,0,fast_simple
+You know what I mean?,2,voice
+Repeat,0,fast_simple
+"Wait, go back",2,voice
+Good morning,0,fast_simple
+Good morning,0,fast_simple
+What's the weather?,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Define serendipity,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Pause music,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Volume up,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+"Actually, never mind",2,voice
+"Um, I'm not sure",2,voice
+Write a formal business proposal,1,slow_complex
+Define serendipity,0,fast_simple
+"Wait, what?",2,voice
+Hold on a sec,2,voice
+Turn on the lights,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Who is the president?,0,fast_simple
+"Actually, wait",2,voice
+"Like, can you help?",2,voice
+What was that again?,2,voice
+Create a marketing strategy,1,slow_complex
+"Hey, are you there?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Design microservices for e-commerce,1,slow_complex
+"Like, can you help?",2,voice
+Write a formal business proposal,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Remind me to buy milk,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+Turn on the lights,0,fast_simple
+Write a short story about AI,1,slow_complex
+Write a short story about AI,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Volume up,0,fast_simple
+"Actually, wait",2,voice
+What was that again?,2,voice
+Analyze Macbeth themes,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+You know what I mean?,2,voice
+What time is it?,0,fast_simple
+"Okay, sure thing",2,voice
+Analyze Macbeth themes,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Shuffle,0,fast_simple
+Good night,0,fast_simple
+Create a marketing strategy,1,slow_complex
+How do I get to work?,0,fast_simple
+What's 2+2?,0,fast_simple
+Where is home?,0,fast_simple
+"Wait, what?",2,voice
+Turn on the lights,0,fast_simple
+Help me understand blockchain,1,slow_complex
+How do I get to work?,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+Text Brian,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+"Hey, are you there?",2,voice
+WiFi status,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+Debug this code: print(x),1,slow_complex
+How do I get to work?,0,fast_simple
+Good night,0,fast_simple
+"Like, can you help?",2,voice
+Storage space,0,fast_simple
+"Yeah, do that",2,voice
+Hold on a sec,2,voice
+Help me understand blockchain,1,slow_complex
+Good morning,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+Turn off the TV,0,fast_simple
+Turn on the lights,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Can you... um... find that file?,2,voice
+What was that again?,2,voice
+"Hey, can you like, check my calendar?",2,voice
+Where is home?,0,fast_simple
+What's the weather?,0,fast_simple
+Create a marketing strategy,1,slow_complex
+"Yo, play some music",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Storage space,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Remind me to buy milk,0,fast_simple
+"Wait, go back",2,voice
+"Okay, sounds good",2,voice
+You know what I mean?,2,voice
+What's my calendar?,0,fast_simple
+Hold on a sec,2,voice
+Storage space,0,fast_simple
+Where is home?,0,fast_simple
+"Hey, are you there?",2,voice
+Explain relativity in simple terms,1,slow_complex
+Help me understand blockchain,1,slow_complex
+Remind me to buy milk,0,fast_simple
+"Okay, sounds good",2,voice
+Good night,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+Help me understand blockchain,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Call Mom,0,fast_simple
+"Okay, sure thing",2,voice
+Generate startup ideas,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Hold on a sec,2,voice
+"Um, I'm not sure",2,voice
+Text Brian,0,fast_simple
+"Yo, play some music",2,voice
+Set a timer for 5 minutes,0,fast_simple
+Good morning,0,fast_simple
+"Okay, sure thing",2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+Write a formal business proposal,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Explain relativity in simple terms,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+What's 2+2?,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Hello,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+"Yo, play some music",2,voice
+Write a formal business proposal,1,slow_complex
+Can you... um... find that file?,2,voice
+What's the weather?,0,fast_simple
+Define serendipity,0,fast_simple
+Create a marketing strategy,1,slow_complex
+What's my calendar?,0,fast_simple
+Storage space,0,fast_simple
+Help me understand blockchain,1,slow_complex
+You know what I mean?,2,voice
+Analyze Macbeth themes,1,slow_complex
+Repeat,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Turn on the lights,0,fast_simple
+"Okay, sounds good",2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+Text Brian,0,fast_simple
+"Okay, sure thing",2,voice
+"So, what about that meeting?",2,voice
+Call Mom,0,fast_simple
+What was that again?,2,voice
+"Hey, can you like, check my calendar?",2,voice
+"Yeah, do that",2,voice
+Design microservices for e-commerce,1,slow_complex
+"So, what about that meeting?",2,voice
+Text Brian,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Write a short story about AI,1,slow_complex
+"Yo, play some music",2,voice
+Can you tell me about... uh... AI?,2,voice
+Who is the president?,0,fast_simple
+Repeat,0,fast_simple
+Good night,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+Can you... um... find that file?,2,voice
+How do I get to work?,0,fast_simple
+Write a short story about AI,1,slow_complex
+Storage space,0,fast_simple
+Turn on the lights,0,fast_simple
+"Hey, are you there?",2,voice
+Can you... um... find that file?,2,voice
+Write a Python script to scrape a website,1,slow_complex
+Hello,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+What's playing?,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Generate startup ideas,1,slow_complex
+Shuffle,0,fast_simple
+What's my calendar?,0,fast_simple
+Good morning,0,fast_simple
+"Wait, what?",2,voice
+WiFi status,0,fast_simple
+What's 2+2?,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Stop,0,fast_simple
+Can you... um... find that file?,2,voice
+What's my calendar?,0,fast_simple
+"Actually, wait",2,voice
+Evaluate pros and cons of remote work,1,slow_complex
+Where is home?,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+Stop,0,fast_simple
+Hold on a sec,2,voice
+"Nah, forget it",2,voice
+"Okay, sounds good",2,voice
+Write a Python script to scrape a website,1,slow_complex
+Write a formal business proposal,1,slow_complex
+What was that again?,2,voice
+"Yeah, do that",2,voice
+Battery level,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Goodbye,0,fast_simple
+"Okay, sounds good",2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+Help me understand blockchain,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+"Okay, sounds good",2,voice
+"Hey, are you there?",2,voice
+"Nah, forget it",2,voice
+Explain relativity in simple terms,1,slow_complex
+"Um, I'm not sure",2,voice
+"Hey, can you like, check my calendar?",2,voice
+Write a Python script to scrape a website,1,slow_complex
+What's the weather?,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+"Actually, never mind",2,voice
+You know what I mean?,2,voice
+Bluetooth on,0,fast_simple
+Who is the president?,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+What's my calendar?,0,fast_simple
+"Yo, play some music",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+What was that again?,2,voice
+"Hey, can you like, check my calendar?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Evaluate pros and cons of remote work,1,slow_complex
+"Actually, never mind",2,voice
+WiFi status,0,fast_simple
+Turn off the TV,0,fast_simple
+"Like, can you help?",2,voice
+"Like, can you help?",2,voice
+"Yeah, do that",2,voice
+"Yo, play some music",2,voice
+"Okay, sure thing",2,voice
+Help me understand blockchain,1,slow_complex
+"Yeah, do that",2,voice
+"Wait, what?",2,voice
+Help me understand blockchain,1,slow_complex
+"Actually, never mind",2,voice
+"So, what about that meeting?",2,voice
+Write a Python script to scrape a website,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Define serendipity,0,fast_simple
+Goodbye,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Help me understand blockchain,1,slow_complex
+What was that again?,2,voice
+Generate startup ideas,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+"Um, I'm not sure",2,voice
+What's 2+2?,0,fast_simple
+What's the weather?,0,fast_simple
+Turn off the TV,0,fast_simple
+"Yo, play some music",2,voice
+Write a Python script to scrape a website,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Pause music,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+Who is the president?,0,fast_simple
+Help me understand blockchain,1,slow_complex
+"Wait, what?",2,voice
+Previous,0,fast_simple
+Call Mom,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+What's 2+2?,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+"Wait, what?",2,voice
+"Like, can you help?",2,voice
+Write a Python script to scrape a website,1,slow_complex
+What's playing?,0,fast_simple
+Next track,0,fast_simple
+Debug this code: print(x),1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+"Yo, play some music",2,voice
+What's my calendar?,0,fast_simple
+"Okay, sounds good",2,voice
+"Um, I'm not sure",2,voice
+Write a short story about AI,1,slow_complex
+Where is home?,0,fast_simple
+Good morning,0,fast_simple
+Text Brian,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+Hold on a sec,2,voice
+Goodbye,0,fast_simple
+Can you... um... find that file?,2,voice
+Write a Python script to scrape a website,1,slow_complex
+What was that again?,2,voice
+Can you... um... find that file?,2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+"Nah, forget it",2,voice
+"Yo, play some music",2,voice
+Goodbye,0,fast_simple
+"Um, I'm not sure",2,voice
+What time is it?,0,fast_simple
+"Uh, remind me to call Mom, thanks",2,voice
+What's playing?,0,fast_simple
+"Okay, sounds good",2,voice
+"Okay, sure thing",2,voice
+Battery level,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+What's playing?,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+"Actually, never mind",2,voice
+"Yo, play some music",2,voice
+WiFi status,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+"Okay, sounds good",2,voice
+Can you... um... find that file?,2,voice
+Explain relativity in simple terms,1,slow_complex
+Debug this code: print(x),1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Hold on a sec,2,voice
+You know what I mean?,2,voice
+Create a marketing strategy,1,slow_complex
+Previous,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+"Nah, forget it",2,voice
+"Um, I'm not sure",2,voice
+Can you tell me about... uh... AI?,2,voice
+Good night,0,fast_simple
+Bluetooth on,0,fast_simple
+What's playing?,0,fast_simple
+Call Mom,0,fast_simple
+"Hey, are you there?",2,voice
+Hold on a sec,2,voice
+Write a Python script to scrape a website,1,slow_complex
+Generate startup ideas,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Bluetooth on,0,fast_simple
+Pause music,0,fast_simple
+Who is the president?,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Remind me to buy milk,0,fast_simple
+Define serendipity,0,fast_simple
+Stop,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+"Actually, wait",2,voice
+Write a Python script to scrape a website,1,slow_complex
+Create a marketing strategy,1,slow_complex
+"Okay, sounds good",2,voice
+Hold on a sec,2,voice
+"Yo, play some music",2,voice
+"Yo, play some music",2,voice
+Can you... um... find that file?,2,voice
+Summarize latest CRISPR research,1,slow_complex
+"Yo, play some music",2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Volume up,0,fast_simple
+"Okay, sure thing",2,voice
+Battery level,0,fast_simple
+Goodbye,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Write a short story about AI,1,slow_complex
+Who is the president?,0,fast_simple
+Hold on a sec,2,voice
+Can you... um... find that file?,2,voice
+"Actually, never mind",2,voice
+Analyze Macbeth themes,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+"Like, can you help?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+What was that again?,2,voice
+Goodbye,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+What's the weather?,0,fast_simple
+"Wait, go back",2,voice
+"Yeah, do that",2,voice
+"Okay, sounds good",2,voice
+Write a Python script to scrape a website,1,slow_complex
+What's playing?,0,fast_simple
+Generate startup ideas,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+What time is it?,0,fast_simple
+"Actually, never mind",2,voice
+Write a short story about AI,1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+Repeat,0,fast_simple
+Set a timer for 5 minutes,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+"Yeah, do that",2,voice
+Analyze Macbeth themes,1,slow_complex
+"Actually, never mind",2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Write a formal business proposal,1,slow_complex
+What time is it?,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+Can you... um... find that file?,2,voice
+"Actually, wait",2,voice
+"Nah, forget it",2,voice
+Help me understand blockchain,1,slow_complex
+Turn off the TV,0,fast_simple
+"Yeah, do that",2,voice
+Bluetooth on,0,fast_simple
+"Okay, sure thing",2,voice
+"Actually, wait",2,voice
+Repeat,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+"Actually, wait",2,voice
+Hold on a sec,2,voice
+Analyze Macbeth themes,1,slow_complex
+Pause music,0,fast_simple
+"Okay, sounds good",2,voice
+"Hey, are you there?",2,voice
+You know what I mean?,2,voice
+Generate startup ideas,1,slow_complex
+Write a formal business proposal,1,slow_complex
+"Okay, sure thing",2,voice
+What's the weather?,0,fast_simple
+Shuffle,0,fast_simple
+Turn off the TV,0,fast_simple
+What's 2+2?,0,fast_simple
+Define serendipity,0,fast_simple
+Stop,0,fast_simple
+"So, what about that meeting?",2,voice
+What time is it?,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Next track,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Debug this code: print(x),1,slow_complex
+"Like, can you help?",2,voice
+"Hey, are you there?",2,voice
+Evaluate pros and cons of remote work,1,slow_complex
+"Wait, go back",2,voice
+Create a marketing strategy,1,slow_complex
+Who is the president?,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Turn on the lights,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Write a short story about AI,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Who is the president?,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Storage space,0,fast_simple
+"Yeah, do that",2,voice
+What's playing?,0,fast_simple
+"Like, can you help?",2,voice
+Good morning,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+Next track,0,fast_simple
+What was that again?,2,voice
+Explain relativity in simple terms,1,slow_complex
+Write a short story about AI,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+"Actually, never mind",2,voice
+"Okay, sure thing",2,voice
+Turn off the TV,0,fast_simple
+"Nah, forget it",2,voice
+"Nah, forget it",2,voice
+Good morning,0,fast_simple
+What's playing?,0,fast_simple
+"Hey, are you there?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Volume up,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+"Okay, sounds good",2,voice
+Create a marketing strategy,1,slow_complex
+Pause music,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+What was that again?,2,voice
+"Hey, are you there?",2,voice
+Can you... um... find that file?,2,voice
+What's playing?,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+"Wait, what?",2,voice
+Shuffle,0,fast_simple
+Generate startup ideas,1,slow_complex
+Next track,0,fast_simple
+Volume up,0,fast_simple
+What's 2+2?,0,fast_simple
+Repeat,0,fast_simple
+Text Brian,0,fast_simple
+Repeat,0,fast_simple
+"Actually, never mind",2,voice
+Write a short story about AI,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+Write a formal business proposal,1,slow_complex
+Debug this code: print(x),1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Who is the president?,0,fast_simple
+What's playing?,0,fast_simple
+"Wait, what?",2,voice
+Previous,0,fast_simple
+Turn off the TV,0,fast_simple
+WiFi status,0,fast_simple
+Set a timer for 5 minutes,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Generate startup ideas,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Shuffle,0,fast_simple
+Generate startup ideas,1,slow_complex
+Turn off the TV,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+Storage space,0,fast_simple
+"Actually, never mind",2,voice
+Goodbye,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Hold on a sec,2,voice
+Summarize latest CRISPR research,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+Battery level,0,fast_simple
+"Actually, never mind",2,voice
+Pause music,0,fast_simple
+How do I get to work?,0,fast_simple
+Help me understand blockchain,1,slow_complex
+"Actually, wait",2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+Turn on the lights,0,fast_simple
+What time is it?,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Create a marketing strategy,1,slow_complex
+You know what I mean?,2,voice
+"Okay, sounds good",2,voice
+How do I get to work?,0,fast_simple
+"Nah, forget it",2,voice
+Bluetooth on,0,fast_simple
+What's my calendar?,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Write a short story about AI,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Hold on a sec,2,voice
+"Yeah, do that",2,voice
+Set a timer for 5 minutes,0,fast_simple
+Call Mom,0,fast_simple
+Write a short story about AI,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+"Wait, go back",2,voice
+Text Brian,0,fast_simple
+Generate startup ideas,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Generate startup ideas,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Turn off the TV,0,fast_simple
+Generate startup ideas,1,slow_complex
+Repeat,0,fast_simple
+Set a timer for 5 minutes,0,fast_simple
+Good morning,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+Next track,0,fast_simple
+"Actually, wait",2,voice
+How do I get to work?,0,fast_simple
+Battery level,0,fast_simple
+What time is it?,0,fast_simple
+Debug this code: print(x),1,slow_complex
+"Actually, wait",2,voice
+Write a Python script to scrape a website,1,slow_complex
+Hold on a sec,2,voice
+Hello,0,fast_simple
+Stop,0,fast_simple
+Shuffle,0,fast_simple
+Generate startup ideas,1,slow_complex
+Call Mom,0,fast_simple
+"Yo, play some music",2,voice
+Write a short story about AI,1,slow_complex
+"Um, I'm not sure",2,voice
+What time is it?,0,fast_simple
+"Nah, forget it",2,voice
+Debug this code: print(x),1,slow_complex
+WiFi status,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+"Actually, wait",2,voice
+Explain relativity in simple terms,1,slow_complex
+You know what I mean?,2,voice
+"Okay, sure thing",2,voice
+Debug this code: print(x),1,slow_complex
+What was that again?,2,voice
+Create a marketing strategy,1,slow_complex
+Help me understand blockchain,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+Good night,0,fast_simple
+Can you... um... find that file?,2,voice
+Write a formal business proposal,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Design microservices for e-commerce,1,slow_complex
+"Wait, go back",2,voice
+Design microservices for e-commerce,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Next track,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Hold on a sec,2,voice
+Explain relativity in simple terms,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Text Brian,0,fast_simple
+How do I get to work?,0,fast_simple
+What time is it?,0,fast_simple
+"Okay, sounds good",2,voice
+Design microservices for e-commerce,1,slow_complex
+"Wait, go back",2,voice
+Battery level,0,fast_simple
+How do I get to work?,0,fast_simple
+Call Mom,0,fast_simple
+Hold on a sec,2,voice
+"Wait, go back",2,voice
+Turn off the TV,0,fast_simple
+"Wait, go back",2,voice
+"Hey, can you like, check my calendar?",2,voice
+Pause music,0,fast_simple
+"Yeah, do that",2,voice
+Create a marketing strategy,1,slow_complex
+What's my calendar?,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Create a marketing strategy,1,slow_complex
+"So, what about that meeting?",2,voice
+Set a timer for 5 minutes,0,fast_simple
+Hold on a sec,2,voice
+Storage space,0,fast_simple
+Storage space,0,fast_simple
+"Wait, what?",2,voice
+Bluetooth on,0,fast_simple
+Can you... um... find that file?,2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+"Wait, go back",2,voice
+What time is it?,0,fast_simple
+Generate startup ideas,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+"Like, can you help?",2,voice
+WiFi status,0,fast_simple
+Create a marketing strategy,1,slow_complex
+What was that again?,2,voice
+WiFi status,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Battery level,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Shuffle,0,fast_simple
+Generate startup ideas,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Pause music,0,fast_simple
+Good morning,0,fast_simple
+"Uh, remind me to call Mom, thanks",2,voice
+"Wait, what?",2,voice
+Can you... um... find that file?,2,voice
+Design microservices for e-commerce,1,slow_complex
+Bluetooth on,0,fast_simple
+Define serendipity,0,fast_simple
+Volume up,0,fast_simple
+"Yeah, do that",2,voice
+"Okay, sounds good",2,voice
+Previous,0,fast_simple
+"Yeah, do that",2,voice
+Good morning,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Call Mom,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Generate startup ideas,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+"Actually, wait",2,voice
+"Yo, play some music",2,voice
+Help me understand blockchain,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+"Nah, forget it",2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Plan a 7-day Tokyo trip,1,slow_complex
+Turn off the TV,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+Where is home?,0,fast_simple
+Storage space,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+"Uh, remind me to call Mom, thanks",2,voice
+"Yo, play some music",2,voice
+Summarize latest CRISPR research,1,slow_complex
+"Actually, never mind",2,voice
+Create a marketing strategy,1,slow_complex
+Generate startup ideas,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Hold on a sec,2,voice
+What's my calendar?,0,fast_simple
+Goodbye,0,fast_simple
+Where is home?,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+What's playing?,0,fast_simple
+Hold on a sec,2,voice
+Help me understand blockchain,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+Text Brian,0,fast_simple
+"Okay, sounds good",2,voice
+Where is home?,0,fast_simple
+Define serendipity,0,fast_simple
+What time is it?,0,fast_simple
+"Um, I'm not sure",2,voice
+Good morning,0,fast_simple
+Write a formal business proposal,1,slow_complex
+What's my calendar?,0,fast_simple
+"Like, can you help?",2,voice
+"Hey, are you there?",2,voice
+Turn off the TV,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+What time is it?,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Define serendipity,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Text Brian,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Help me understand blockchain,1,slow_complex
+Call Mom,0,fast_simple
+What's 2+2?,0,fast_simple
+"Um, I'm not sure",2,voice
+Can you... um... find that file?,2,voice
+Who is the president?,0,fast_simple
+Turn off the TV,0,fast_simple
+Goodbye,0,fast_simple
+Goodbye,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Debug this code: print(x),1,slow_complex
+Volume up,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+Text Brian,0,fast_simple
+Generate startup ideas,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Stop,0,fast_simple
+Call Mom,0,fast_simple
+Hold on a sec,2,voice
+Storage space,0,fast_simple
+"Wait, go back",2,voice
+Write a short story about AI,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+Analyze Macbeth themes,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Hello,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+"Okay, sure thing",2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+Stop,0,fast_simple
+Define serendipity,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+"Like, can you help?",2,voice
+Goodbye,0,fast_simple
+"Actually, never mind",2,voice
+Evaluate pros and cons of remote work,1,slow_complex
+Repeat,0,fast_simple
+Generate startup ideas,1,slow_complex
+Call Mom,0,fast_simple
+Previous,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Turn off the TV,0,fast_simple
+Hello,0,fast_simple
+"Um, I'm not sure",2,voice
+Evaluate pros and cons of remote work,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+Where is home?,0,fast_simple
+"Hey, are you there?",2,voice
+"Um, I'm not sure",2,voice
+Write a Python script to scrape a website,1,slow_complex
+Create a marketing strategy,1,slow_complex
+What time is it?,0,fast_simple
+"Okay, sounds good",2,voice
+"Um, I'm not sure",2,voice
+Remind me to buy milk,0,fast_simple
+"Nah, forget it",2,voice
+"Like, can you help?",2,voice
+Debug this code: print(x),1,slow_complex
+What's playing?,0,fast_simple
+Where is home?,0,fast_simple
+"Actually, never mind",2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Remind me to buy milk,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+Debug this code: print(x),1,slow_complex
+Generate startup ideas,1,slow_complex
+"Wait, what?",2,voice
+"Actually, never mind",2,voice
+What's my calendar?,0,fast_simple
+Analyze Macbeth themes,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+You know what I mean?,2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+"Uh, remind me to call Mom, thanks",2,voice
+Storage space,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Volume up,0,fast_simple
+"Um, I'm not sure",2,voice
+Help me understand blockchain,1,slow_complex
+Shuffle,0,fast_simple
+"Hey, are you there?",2,voice
+Next track,0,fast_simple
+Pause music,0,fast_simple
+Battery level,0,fast_simple
+Can you... um... find that file?,2,voice
+Storage space,0,fast_simple
+"Nah, forget it",2,voice
+"Yeah, do that",2,voice
+WiFi status,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+You know what I mean?,2,voice
+Can you tell me about... uh... AI?,2,voice
+Next track,0,fast_simple
+Previous,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+How do I get to work?,0,fast_simple
+"Actually, never mind",2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Call Mom,0,fast_simple
+Repeat,0,fast_simple
+"So, what about that meeting?",2,voice
+Remind me to buy milk,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Explain relativity in simple terms,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+You know what I mean?,2,voice
+Define serendipity,0,fast_simple
+"Actually, wait",2,voice
+"Actually, wait",2,voice
+Explain relativity in simple terms,1,slow_complex
+What's 2+2?,0,fast_simple
+Bluetooth on,0,fast_simple
+Create a marketing strategy,1,slow_complex
+Repeat,0,fast_simple
+"Uh, remind me to call Mom, thanks",2,voice
+Hello,0,fast_simple
+"Wait, what?",2,voice
+Hold on a sec,2,voice
+"Nah, forget it",2,voice
+"Okay, sounds good",2,voice
+What's 2+2?,0,fast_simple
+"Yeah, do that",2,voice
+"So, what about that meeting?",2,voice
+"Okay, sure thing",2,voice
+Shuffle,0,fast_simple
+Set a timer for 5 minutes,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+"Actually, wait",2,voice
+"So, what about that meeting?",2,voice
+Repeat,0,fast_simple
+Write a short story about AI,1,slow_complex
+How do I get to work?,0,fast_simple
+"Uh, remind me to call Mom, thanks",2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+"Uh, remind me to call Mom, thanks",2,voice
+"So, what about that meeting?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Design microservices for e-commerce,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+Where is home?,0,fast_simple
+Can you... um... find that file?,2,voice
+Volume up,0,fast_simple
+What was that again?,2,voice
+Good morning,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+Shuffle,0,fast_simple
+Hello,0,fast_simple
+Goodbye,0,fast_simple
+Who is the president?,0,fast_simple
+Hold on a sec,2,voice
+"Like, can you help?",2,voice
+"Hey, are you there?",2,voice
+"Wait, go back",2,voice
+What time is it?,0,fast_simple
+"Hey, are you there?",2,voice
+"Hey, are you there?",2,voice
+Shuffle,0,fast_simple
+"Actually, wait",2,voice
+Write a formal business proposal,1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+Shuffle,0,fast_simple
+WiFi status,0,fast_simple
+Remind me to buy milk,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Repeat,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+Turn on the lights,0,fast_simple
+"Um, I'm not sure",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Call Mom,0,fast_simple
+"Um, I'm not sure",2,voice
+Write a formal business proposal,1,slow_complex
+"Wait, what?",2,voice
+Where is home?,0,fast_simple
+Bluetooth on,0,fast_simple
+What's 2+2?,0,fast_simple
+"Hey, are you there?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+"Um, I'm not sure",2,voice
+Previous,0,fast_simple
+Next track,0,fast_simple
+"Actually, never mind",2,voice
+Storage space,0,fast_simple
+"Yo, play some music",2,voice
+What's my calendar?,0,fast_simple
+Set a timer for 5 minutes,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Remind me to buy milk,0,fast_simple
+Write a Python script to scrape a website,1,slow_complex
+Generate startup ideas,1,slow_complex
+Design microservices for e-commerce,1,slow_complex
+"So, what about that meeting?",2,voice
+Pause music,0,fast_simple
+"Um, I'm not sure",2,voice
+What's the weather?,0,fast_simple
+Who is the president?,0,fast_simple
+Good night,0,fast_simple
+Volume up,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Set up Kubernetes on AWS,1,slow_complex
+WiFi status,0,fast_simple
+Hello,0,fast_simple
+Previous,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Turn on the lights,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+WiFi status,0,fast_simple
+Pause music,0,fast_simple
+"Actually, never mind",2,voice
+Create a marketing strategy,1,slow_complex
+"Like, can you help?",2,voice
+What's 2+2?,0,fast_simple
+"Like, can you help?",2,voice
+Goodbye,0,fast_simple
+"Okay, sounds good",2,voice
+Good night,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+"Hey, are you there?",2,voice
+"Um, I'm not sure",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+"Wait, what?",2,voice
+Debug this code: print(x),1,slow_complex
+Debug this code: print(x),1,slow_complex
+Remind me to buy milk,0,fast_simple
+"Actually, wait",2,voice
+Hello,0,fast_simple
+What's the weather?,0,fast_simple
+Debug this code: print(x),1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Write a short story about AI,1,slow_complex
+"Okay, sounds good",2,voice
+"Actually, wait",2,voice
+Help me understand blockchain,1,slow_complex
+Good morning,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Write a Python script to scrape a website,1,slow_complex
+"Wait, go back",2,voice
+Debug this code: print(x),1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+Can you... um... find that file?,2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Stop,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+"Wait, what?",2,voice
+Bluetooth on,0,fast_simple
+"Wait, go back",2,voice
+WiFi status,0,fast_simple
+Text Brian,0,fast_simple
+"Um, I'm not sure",2,voice
+What was that again?,2,voice
+Analyze Macbeth themes,1,slow_complex
+"Hey, can you like, check my calendar?",2,voice
+Summarize latest CRISPR research,1,slow_complex
+"Wait, what?",2,voice
+Generate startup ideas,1,slow_complex
+You know what I mean?,2,voice
+"So, what about that meeting?",2,voice
+Previous,0,fast_simple
+Bluetooth on,0,fast_simple
+"Yeah, do that",2,voice
+Battery level,0,fast_simple
+Create a marketing strategy,1,slow_complex
+Write a short story about AI,1,slow_complex
+Remind me to buy milk,0,fast_simple
+"Actually, never mind",2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+"Wait, what?",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Goodbye,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+Remind me to buy milk,0,fast_simple
+"Like, can you help?",2,voice
+Debug this code: print(x),1,slow_complex
+You know what I mean?,2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+What's the weather?,0,fast_simple
+What's the weather?,0,fast_simple
+"So, what about that meeting?",2,voice
+Write a formal business proposal,1,slow_complex
+Next track,0,fast_simple
+Create a marketing strategy,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+Battery level,0,fast_simple
+Turn on the lights,0,fast_simple
+Stop,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+"Like, can you help?",2,voice
+Good morning,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+What's 2+2?,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+"So, what about that meeting?",2,voice
+"Wait, go back",2,voice
+What's my calendar?,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Where is home?,0,fast_simple
+Good night,0,fast_simple
+How do I get to work?,0,fast_simple
+Stop,0,fast_simple
+Stop,0,fast_simple
+Design microservices for e-commerce,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Can you... um... find that file?,2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+"Actually, wait",2,voice
+Plan a 7-day Tokyo trip,1,slow_complex
+Can you tell me about... uh... AI?,2,voice
+Repeat,0,fast_simple
+"Wait, what?",2,voice
+Shuffle,0,fast_simple
+How do I get to work?,0,fast_simple
+"Yo, play some music",2,voice
+"So, what about that meeting?",2,voice
+Turn on the lights,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+"Yeah, do that",2,voice
+Evaluate pros and cons of remote work,1,slow_complex
+Write a short story about AI,1,slow_complex
+What time is it?,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Analyze Macbeth themes,1,slow_complex
+Shuffle,0,fast_simple
+Turn on the lights,0,fast_simple
+Can you... um... find that file?,2,voice
+Summarize latest CRISPR research,1,slow_complex
+Pause music,0,fast_simple
+Summarize latest CRISPR research,1,slow_complex
+Stop,0,fast_simple
+Remind me to buy milk,0,fast_simple
+Storage space,0,fast_simple
+"Yo, play some music",2,voice
+Compare 1920s vs 2020s economics,1,slow_complex
+"So, what about that meeting?",2,voice
+How do I get to work?,0,fast_simple
+Turn on the lights,0,fast_simple
+"Yeah, do that",2,voice
+Help me understand blockchain,1,slow_complex
+Create a marketing strategy,1,slow_complex
+"Wait, what?",2,voice
+What's my calendar?,0,fast_simple
+You know what I mean?,2,voice
+"Wait, go back",2,voice
+Battery level,0,fast_simple
+Remind me to buy milk,0,fast_simple
+Bluetooth on,0,fast_simple
+"Nah, forget it",2,voice
+"Uh, remind me to call Mom, thanks",2,voice
+Turn on the lights,0,fast_simple
+Previous,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+What's 2+2?,0,fast_simple
+Help me understand blockchain,1,slow_complex
+Stop,0,fast_simple
+Create a marketing strategy,1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+What's 2+2?,0,fast_simple
+Pause music,0,fast_simple
+Shuffle,0,fast_simple
+Volume up,0,fast_simple
+"Yo, play some music",2,voice
+Can you tell me about... uh... AI?,2,voice
+Write a formal business proposal,1,slow_complex
+Call Mom,0,fast_simple
+"Yo, play some music",2,voice
+"Yeah, do that",2,voice
+Define serendipity,0,fast_simple
+Write a formal business proposal,1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+"Hey, can you like, check my calendar?",2,voice
+Explain relativity in simple terms,1,slow_complex
+Repeat,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+How do I get to work?,0,fast_simple
+"Wait, go back",2,voice
+Previous,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+You know what I mean?,2,voice
+What time is it?,0,fast_simple
+Previous,0,fast_simple
+Compare 1920s vs 2020s economics,1,slow_complex
+Set a timer for 5 minutes,0,fast_simple
+"So, what about that meeting?",2,voice
+Evaluate pros and cons of remote work,1,slow_complex
+Evaluate pros and cons of remote work,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+Set up Kubernetes on AWS,1,slow_complex
+Explain relativity in simple terms,1,slow_complex
+Create a marketing strategy,1,slow_complex
+Compare 1920s vs 2020s economics,1,slow_complex
+Pause music,0,fast_simple
+"Yeah, do that",2,voice
+"Hey, are you there?",2,voice
+Summarize latest CRISPR research,1,slow_complex
+What's 2+2?,0,fast_simple
+Can you tell me about... uh... AI?,2,voice
+"Okay, sounds good",2,voice
+Battery level,0,fast_simple
+Evaluate pros and cons of remote work,1,slow_complex
+"Okay, sure thing",2,voice
+Hello,0,fast_simple
+Hello,0,fast_simple
+What's playing?,0,fast_simple
+Next track,0,fast_simple
+You know what I mean?,2,voice
+"Hey, can you like, check my calendar?",2,voice
+Debug this code: print(x),1,slow_complex
+Bluetooth on,0,fast_simple
+Who is the president?,0,fast_simple
+"Okay, sure thing",2,voice
+Set up Kubernetes on AWS,1,slow_complex
+Summarize latest CRISPR research,1,slow_complex
+"Wait, go back",2,voice
+What's the weather?,0,fast_simple
+WiFi status,0,fast_simple
+Write a short story about AI,1,slow_complex
+"Wait, what?",2,voice
+"Wait, go back",2,voice
+Call Mom,0,fast_simple
+Volume up,0,fast_simple
+Explain relativity in simple terms,1,slow_complex
+"Nah, forget it",2,voice
+Generate startup ideas,1,slow_complex
+"Actually, wait",2,voice
+Good night,0,fast_simple
+Good morning,0,fast_simple
+"Yeah, do that",2,voice
+Debug this code: print(x),1,slow_complex
+Turn off the TV,0,fast_simple
+Plan a 7-day Tokyo trip,1,slow_complex
+Where is home?,0,fast_simple
+Set up Kubernetes on AWS,1,slow_complex
+"Okay, sounds good",2,voice
+"Wait, go back",2,voice
+"Like, can you help?",2,voice
+"Like, can you help?",2,voice
+"Actually, wait",2,voice
+"Yeah, do that",2,voice

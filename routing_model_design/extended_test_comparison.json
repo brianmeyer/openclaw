@@ -1,0 +1,16 @@
+[
+  {
+    "model": "TinyBERT (5 epoch)",
+    "accuracy": 0.8661800486618005,
+    "latency_mean": 2.9869718853001306,
+    "latency_p95": 3.233366648782976,
+    "test_size": 822
+  },
+  {
+    "model": "DistilBERT (baseline)",
+    "accuracy": 0.9136253041362531,
+    "latency_mean": 3.5611073107803084,
+    "latency_p95": 5.517464320291765,
+    "test_size": 822
+  }
+]

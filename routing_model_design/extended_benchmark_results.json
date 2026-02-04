@@ -1,0 +1,20 @@
+[
+  {
+    "model": "TinyBERT-Augmented",
+    "accuracy": 0.8588807785888077,
+    "latency_mean": 2.0493002028607847,
+    "latency_p95": 2.4674791377037764
+  },
+  {
+    "model": "DistilBERT-Baseline",
+    "accuracy": 0.9136253041362531,
+    "latency_mean": 2.3108073808349117,
+    "latency_p95": 3.2058854296337747
+  },
+  {
+    "model": "ModernBERT",
+    "accuracy": 0.9197080291970803,
+    "latency_mean": 5.864924910974546,
+    "latency_p95": 8.489731859299352
+  }
+]
